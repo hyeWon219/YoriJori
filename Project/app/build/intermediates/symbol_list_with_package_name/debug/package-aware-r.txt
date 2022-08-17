@@ -1717,6 +1717,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Cart_name
 id FUNCTION
 id META
 id NO_DEBUG
@@ -1795,6 +1796,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backToHome
 id back_layout
 id barrier
 id baseline
@@ -1887,6 +1889,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id findText
 id fitToContents
 id fixed
 id flip
@@ -1914,6 +1917,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton
+id imageButton3
 id imageView
 id info
 id invisible
@@ -1931,6 +1936,7 @@ id leftToRight
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id main_frame
@@ -2113,6 +2119,7 @@ id textTop
 id textView
 id textView2
 id textView3
+id textView7
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2145,6 +2152,7 @@ id up
 id useLogo
 id view
 id view2
+id view3
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -2216,6 +2224,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cart
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
