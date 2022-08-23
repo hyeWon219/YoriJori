@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         context_main = this;
 
+        //cart 페이지 이동을 위한 버튼 변수와 리스너 추가
         Button button_cart = findViewById(R.id.button3);
-
         button_cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

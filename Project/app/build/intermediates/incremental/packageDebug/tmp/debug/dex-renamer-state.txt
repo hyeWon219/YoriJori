@@ -1,4 +1,4 @@
-#Tue Aug 23 16:36:42 KST 2022
+#Tue Aug 23 16:48:58 KST 2022
 base.0=D\:\\GitHub\\RecipeApp\\Project\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
