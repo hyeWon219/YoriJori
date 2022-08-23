@@ -11,7 +11,7 @@
 9-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:5:5-20:19
+11-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:5:5-21:19
 12        android:allowBackup="true"
 12-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -45,6 +45,9 @@
 26-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:17:27-74
 27            </intent-filter>
 28        </activity>
-29    </application>
-30
-31</manifest>
+29        <activity android:name="com.example.recipeapp.Cart" />
+29-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:12:9-51
+29-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:12:19-39
+30    </application>
+31
+32</manifest>
