@@ -1675,6 +1675,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable layout_background
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1790,6 +1791,7 @@ id always
 id anchored
 id animateToEnd
 id animateToStart
+id appTitleText
 id asConfigured
 id async
 id auto
@@ -1828,6 +1830,8 @@ id chip_group
 id chronometer
 id circle_center
 id clear_text
+id clickLayout1
+id clickLayout2
 id clip_horizontal
 id clip_vertical
 id clockwise
@@ -1894,6 +1898,10 @@ id fitToContents
 id fixed
 id flip
 id floating
+id foodImage
+id foodImage2
+id foodName
+id foodName2
 id forever
 id fragment_container_view_tag
 id ghost_view
@@ -2007,6 +2015,8 @@ id off
 id on
 id outline
 id outward
+id oxText
+id oxText2
 id packed
 id parallax
 id parent
@@ -2020,6 +2030,8 @@ id peekHeight
 id percent
 id pin
 id position
+id possibilityText
+id possibilityText2
 id postLayout
 id progress_circular
 id progress_horizontal
@@ -2056,6 +2068,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settingButton
 id shortcut
 id showCustom
 id showHome
@@ -2132,6 +2145,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titleLayout
 id title_template
 id toggle
 id top
@@ -2226,6 +2240,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cart
 layout activity_main
+layout activity_recipe
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
