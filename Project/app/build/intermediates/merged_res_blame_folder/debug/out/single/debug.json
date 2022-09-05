@@ -68,8 +68,16 @@
         "source": "C:\\Users\\7607\\Documents\\GitHub\\RecipeApp\\Project\\app\\src\\main\\res\\drawable\\rect1.xml"
     },
     {
+        "merged": "C:\\Users\\7607\\Documents\\GitHub\\RecipeApp\\Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layout_background.xml.flat",
+        "source": "C:\\Users\\7607\\Documents\\GitHub\\RecipeApp\\Project\\app\\src\\main\\res\\drawable\\layout_background.xml"
+    },
+    {
         "merged": "C:\\Users\\7607\\Documents\\GitHub\\RecipeApp\\Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\7607\\Documents\\GitHub\\RecipeApp\\Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\7607\\Documents\\GitHub\\RecipeApp\\Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recipe.xml.flat",
+        "source": "C:\\Users\\7607\\Documents\\GitHub\\RecipeApp\\Project\\app\\src\\main\\res\\layout\\activity_recipe.xml"
     },
     {
         "merged": "C:\\Users\\7607\\Documents\\GitHub\\RecipeApp\\Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
