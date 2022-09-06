@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_main">#475F77</color>
     <color name="blue_main2">#34495E</color>
+    <color name="blue_sliding">#F235495E</color>
+    <color name="blue_popup">#6B849E</color>
 </resources>
