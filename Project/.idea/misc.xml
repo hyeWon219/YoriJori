@@ -4,14 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/7607/Documents/GitHub/RecipeApp/Project/app/src/main/res/layout/activity_cart.xml" value="0.25" />
-        <entry key="..\:/Users/7607/Documents/GitHub/RecipeApp/Project/app/src/main/res/layout/activity_main.xml" value="0.1656534954407295" />
+        <entry key="..\:/Users/7607/Documents/GitHub/RecipeApp/Project/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/7607/Documents/GitHub/RecipeApp/Project/app/src/main/res/layout/activity_recipe.xml" value="0.1656534954407295" />
+        <entry key="..\:/Users/Hwa/Documents/GitHub/RecipeApp/Project/app/src/main/res/drawable/layout_background.xml" value="0.1" />
+        <entry key="..\:/Users/Hwa/Documents/GitHub/RecipeApp/Project/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
-  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
