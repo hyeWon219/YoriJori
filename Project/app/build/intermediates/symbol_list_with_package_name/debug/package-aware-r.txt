@@ -1677,6 +1677,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable layout_background
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1721,6 +1722,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Cart_name
 id FUNCTION
 id META
 id NO_DEBUG
@@ -1793,12 +1795,14 @@ id always
 id anchored
 id animateToEnd
 id animateToStart
+id appTitleText
 id asConfigured
 id async
 id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backToHome
 id back_layout
 id barrier
 id baseline
@@ -1837,6 +1841,8 @@ id chip_group
 id chronometer
 id circle_center
 id clear_text
+id clickLayout1
+id clickLayout2
 id clip_horizontal
 id clip_vertical
 id clockwise
@@ -1898,10 +1904,15 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id findText
 id fitToContents
 id fixed
 id flip
 id floating
+id foodImage
+id foodImage2
+id foodName
+id foodName2
 id forever
 id fragment_container_view_tag
 id ghost_view
@@ -1925,6 +1936,12 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+<<<<<<< HEAD
+=======
+id imageButton
+id imageButton3
+id imageView
+>>>>>>> hyewon(clubroom)
 id info
 id invisible
 id inward
@@ -1941,6 +1958,7 @@ id leftToRight
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id main_frame
@@ -2011,6 +2029,8 @@ id off
 id on
 id outline
 id outward
+id oxText
+id oxText2
 id packed
 id parallax
 id parent
@@ -2024,6 +2044,8 @@ id peekHeight
 id percent
 id pin
 id position
+id possibilityText
+id possibilityText2
 id postLayout
 id progress_circular
 id progress_horizontal
@@ -2060,6 +2082,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settingButton
 id shortcut
 id showCustom
 id showHome
@@ -2123,7 +2146,11 @@ id textTop
 id textView
 id textView2
 id textView3
+<<<<<<< HEAD
 id textView4
+=======
+id textView7
+>>>>>>> hyewon(clubroom)
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2136,6 +2163,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titleLayout
 id title_template
 id toggle
 id top
@@ -2156,6 +2184,11 @@ id up
 id useLogo
 id view
 id view2
+id view3
+id view5
+id view7
+id view8
+id view9
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -2227,7 +2260,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cart
 layout activity_main
+layout activity_recipe
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
