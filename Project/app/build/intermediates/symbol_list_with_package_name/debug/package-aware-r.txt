@@ -1936,12 +1936,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-<<<<<<< HEAD
-=======
 id imageButton
 id imageButton3
 id imageView
->>>>>>> hyewon(clubroom)
 id info
 id invisible
 id inward
@@ -2146,11 +2143,8 @@ id textTop
 id textView
 id textView2
 id textView3
-<<<<<<< HEAD
 id textView4
-=======
 id textView7
->>>>>>> hyewon(clubroom)
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2184,7 +2178,6 @@ id up
 id useLogo
 id view
 id view2
-id view3
 id view5
 id view7
 id view8
