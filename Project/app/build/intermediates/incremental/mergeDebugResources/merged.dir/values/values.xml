@@ -403,6 +403,8 @@
     <color name="black">#FF000000</color>
     <color name="blue_main">#475F77</color>
     <color name="blue_main2">#34495E</color>
+    <color name="blue_popup">#6B849E</color>
+    <color name="blue_sliding">#F235495E</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>

@@ -993,6 +993,8 @@ color background_material_light
 color black
 color blue_main
 color blue_main2
+color blue_popup
+color blue_sliding
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1711,6 +1713,8 @@ drawable notify_panel_notification_icon_bg
 drawable rect1
 drawable rect2
 drawable rect3
+drawable rect4
+drawable rect5
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1808,9 +1812,16 @@ id blocking
 id bottom
 id bounce
 id button
+id button10
+id button16
 id button2
 id button3
 id button4
+id button5
+id button6
+id button7
+id button8
+id button9
 id buttonPanel
 id cache_measures
 id cancel_action
@@ -2132,6 +2143,7 @@ id textTop
 id textView
 id textView2
 id textView3
+id textView4
 id textView7
 id text_input_end_icon
 id text_input_error_icon
@@ -2166,7 +2178,6 @@ id up
 id useLogo
 id view
 id view2
-id view3
 id view5
 id view7
 id view8
@@ -2261,6 +2272,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout main_popup
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
