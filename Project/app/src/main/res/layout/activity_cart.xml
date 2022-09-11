@@ -82,12 +82,40 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <View
-                        android:id="@+id/view29"
+                    <FrameLayout
+                        android:id="@+id/recipe_1"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
 
                     <View
                         android:id="@+id/view31"
@@ -95,12 +123,642 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
-                    <View
-                        android:id="@+id/view30"
+                    <FrameLayout
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view19"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view18"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view17"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view16"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view15"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view14"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
                 </LinearLayout>
 
                 <View
@@ -108,186 +766,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="10dp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <View
-                        android:id="@+id/view29"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-
-                    <View
-                        android:id="@+id/view31"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <View
-                        android:id="@+id/view30"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-                </LinearLayout>
-
-                <View
-                    android:id="@+id/view33"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <View
-                        android:id="@+id/view29"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-
-                    <View
-                        android:id="@+id/view31"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <View
-                        android:id="@+id/view30"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-                </LinearLayout>
-
-                <View
-                    android:id="@+id/view34"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <View
-                        android:id="@+id/view29"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-
-                    <View
-                        android:id="@+id/view31"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <View
-                        android:id="@+id/view30"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-                </LinearLayout>
-
-                <View
-                    android:id="@+id/view35"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <View
-                        android:id="@+id/view29"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-
-                    <View
-                        android:id="@+id/view31"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <View
-                        android:id="@+id/view30"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-                </LinearLayout>
-
-                <View
-                    android:id="@+id/view36"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <View
-                        android:id="@+id/view29"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-
-                    <View
-                        android:id="@+id/view31"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <View
-                        android:id="@+id/view30"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-                </LinearLayout>
-
-                <View
-                    android:id="@+id/view37"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <View
-                        android:id="@+id/view29"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-
-                    <View
-                        android:id="@+id/view31"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <View
-                        android:id="@+id/view30"
-                        android:layout_width="240dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect2" />
-                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
@@ -328,15 +806,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
-    <View
-        android:id="@+id/view38"
-        android:layout_width="380dp"
-        android:layout_height="500dp"
-        android:background="@drawable/rect5"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+    <FrameLayout
+        android:id="@+id/recipeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <View
+            android:id="@+id/view38"
+            android:layout_width="380dp"
+            android:layout_height="500dp"
+            android:background="@drawable/rect5"
+            android:translationX="15dp"
+            android:translationY="120dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/btn_dialog"
+            android:translationX="330dp"
+            android:translationY="125dp"
+            app:backgroundTint="@android:color/background_light" />
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

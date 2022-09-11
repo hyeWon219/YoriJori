@@ -8,3 +8,5 @@ com/example/recipeapp/BuildConfig.java
 com/example/recipeapp/Cart.java
  com.example.recipeapp.Cart
  com.example.recipeapp.Cart$1
+ com.example.recipeapp.Cart$2
+ com.example.recipeapp.Cart$3
