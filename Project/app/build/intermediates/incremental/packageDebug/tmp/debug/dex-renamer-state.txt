@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Mon Sep 12 21:23:42 KST 2022
+#Tue Sep 13 00:00:07 KST 2022
 base.0=D\:\\GitHub\\RecipeApp\\Project\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-=======
-#Mon Sep 12 23:03:45 KST 2022
-base.0=C\:\\GitHub\\Project\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
->>>>>>> subinKim
 renamed.0=classes.dex
 path.0=classes.dex

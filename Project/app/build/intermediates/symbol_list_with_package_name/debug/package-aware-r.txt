@@ -1816,16 +1816,7 @@ id beginning
 id blocking
 id bottom
 id bounce
-<<<<<<< HEAD
-id button
-id button10
 id button11
-id button16
-id button2
-id button3
-id button4
-=======
->>>>>>> subinKim
 id button5
 id button6
 id button7
@@ -2205,17 +2196,11 @@ id textView10
 id textView2
 id textView3
 id textView4
-<<<<<<< HEAD
-id textView6
-id textView7
-id textView8
-=======
 id textView5
 id textView6
 id textView7
 id textView8
 id textView9
->>>>>>> subinKim
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2263,11 +2248,7 @@ id view31
 id view32
 id view38
 id view8
-<<<<<<< HEAD
-=======
-id view9
 id viewPager2
->>>>>>> subinKim
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
