@@ -16,7 +16,7 @@
         android:id="@+id/back_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF" >
+        android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/textView"
@@ -33,7 +33,7 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/Setting_Button"
             android:layout_width="55dp"
             android:layout_height="49dp"
             android:text="Setting"
@@ -54,11 +54,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.77"
+            app:layout_constraintVertical_bias="0.823"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/Item_Button"
             android:layout_width="60dp"
             android:layout_height="58dp"
             android:text="Item"
@@ -71,7 +71,7 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/RecipeBook_Button"
             android:layout_width="60dp"
             android:layout_height="58dp"
             android:text="R Book"
@@ -84,7 +84,7 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/Cart_Button"
             android:layout_width="60dp"
             android:layout_height="58dp"
             android:text="Cart"
@@ -124,6 +124,7 @@
             tools:ignore="MissingConstraints" />
 
         <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
             android:layout_width="259dp"
             android:layout_height="184dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -138,118 +139,90 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/slide_layout"
         android:layout_width="match_parent"
-        android:layout_height="425dp"
+        android:layout_height="300dp"
         android:background="@drawable/rect4">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginLeft="28dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="300dp"
-            android:layout_marginRight="300dp"
+            android:layout_marginBottom="32dp"
             android:text="Select"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button5"
-            android:layout_width="145dp"
-            android:layout_height="77dp"
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_marginStart="48dp"
             android:layout_marginLeft="48dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="27dp"
-            android:layout_marginRight="27dp"
-            android:layout_marginBottom="241dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="31dp"
             android:background="@drawable/rect3"
-            android:text="채소류"
+            android:text="양식"
             android:textColor="#000000"
             android:textSize="24sp"
             app:backgroundTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/rect3"
+            android:text="중식"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/button8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/rect3"
+            android:text="한식"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/button7"
             app:layout_constraintEnd_toStartOf="@+id/button6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
-            android:id="@+id/button7"
-            android:layout_width="145dp"
-            android:layout_height="77dp"
-            android:layout_marginStart="48dp"
-            android:layout_marginLeft="48dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginEnd="218dp"
-            android:layout_marginRight="218dp"
-            android:layout_marginBottom="137dp"
-            android:background="@drawable/rect3"
-            android:text="생선"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="145dp"
-            android:layout_height="77dp"
-            android:layout_marginStart="48dp"
-            android:layout_marginLeft="48dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginEnd="218dp"
-            android:layout_marginRight="218dp"
-            android:layout_marginBottom="33dp"
-            android:background="@drawable/rect3"
-            android:text="조미료"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button7" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="145dp"
-            android:layout_height="77dp"
-            android:layout_marginStart="27dp"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginRight="46dp"
-            android:layout_marginBottom="34dp"
-            android:background="@drawable/rect3"
-            android:text="기타"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button9"
-            app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-        <Button
             android:id="@+id/button8"
-            android:layout_width="145dp"
-            android:layout_height="77dp"
-            android:layout_marginStart="27dp"
-            android:layout_marginLeft="27dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginRight="45dp"
-            android:layout_marginBottom="136dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="31dp"
             android:background="@drawable/rect3"
-            android:text="유제품"
+            android:text="일식"
             android:textColor="#000000"
             android:textSize="24sp"
             app:backgroundTint="@color/white"
@@ -257,26 +230,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button7"
             app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="145dp"
-            android:layout_height="77dp"
-            android:layout_marginStart="220dp"
-            android:layout_marginLeft="220dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginRight="46dp"
-            android:layout_marginBottom="243dp"
-            android:background="@drawable/rect3"
-            android:text="고기류"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
