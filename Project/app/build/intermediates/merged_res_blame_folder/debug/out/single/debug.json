@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "com.example.recipeapp-merged_res-21:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "com.example.recipeapp-main-23:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
@@ -142,5 +143,165 @@
     {
         "merged": "com.example.recipeapp-merged_res-21:/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "com.example.recipeapp-main-23:/mipmap-xhdpi/ic_launcher_round.png"
+=======
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-v24_book.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable-v24\\book.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-0:\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-v24_shopping_cart.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable-v24\\shopping_cart.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable_rect1.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable\\rect1.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-v24_edit.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable-v24\\edit.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable_rect6.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable\\rect6.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\layout_main_custompopup.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\layout\\main_custompopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-v24_user.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable-v24\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable_rect5.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable\\rect5.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\layout_main_custompopup_japanese.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\layout\\main_custompopup_japanese.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-0:\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable_rect3.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable\\rect3.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\layout_activity_cart.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\layout\\activity_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-0:\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\layout_main_custompopup_chinese.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\layout\\main_custompopup_chinese.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.recipeapp-merged_res-5:/layout_info_custompopup.xml.flat",
+        "source": "com.example.recipeapp-main-7:/layout/info_custompopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\layout_main_custompopup_western.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\layout\\main_custompopup_western.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable_rect2.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable\\rect2.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-0:\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\layout_setting_custompopup.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\layout\\setting_custompopup.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-0:\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable_rect4.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable\\rect4.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable_layout_background.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\drawable\\layout_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\layout_activity_recipe.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\layout\\activity_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-0:\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-0:\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-5:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\82108\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-0:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+>>>>>>> subinKim
     }
 ]
