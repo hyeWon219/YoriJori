@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
-        Button button_recipe = findViewById(R.id.RecipeBook_Button);
+        Button button_recipe = findViewById(R.id.recipeBook_Button);
         button_recipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

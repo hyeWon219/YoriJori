@@ -2108,7 +2108,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
-<<<<<<< HEAD
+id recipeBook_Button
 id recipeFrame
 id recipeText
 id recipe_1
@@ -2128,9 +2128,6 @@ id recipe_7
 id recipe_8
 id recipe_9
 id recipe_name
-=======
-id recipeBook_Button
->>>>>>> subinKim
 id rectangles
 id reverseSawtooth
 id right
@@ -2375,11 +2372,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-<<<<<<< HEAD
-layout layout_recipe
-=======
 layout info_custompopup
->>>>>>> subinKim
+layout layout_recipe
 layout main_custompopup
 layout main_custompopup_chinese
 layout main_custompopup_japanese
