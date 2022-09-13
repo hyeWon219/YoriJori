@@ -11,7 +11,7 @@
 9-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:5:5-21:19
+11-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:5:5-25:19
 12        android:allowBackup="true"
 12-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,26 +28,29 @@
 19        android:testOnly="true"
 20        android:theme="@style/Theme.RecipeApp" >
 20-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:11:9-47
-21        <activity android:name="com.example.recipeapp.Cart" />
-21-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:12:9-51
-21-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:12:19-39
-22        <activity android:name="com.example.recipeapp.MainActivity" >
-22-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:13:9-19:20
-22-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:13:19-47
-23            <intent-filter>
-23-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:14:13-18:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:15:17-69
-24-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:15:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:17:17-77
-26-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:17:27-74
-27            </intent-filter>
-28        </activity>
-29        <activity android:name="com.example.recipeapp.Cart" />
-29-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:12:9-51
-29-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:12:19-39
-30    </application>
-31
-32</manifest>
+21        <activity
+21-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:12:9-14:40
+22            android:name="com.example.recipeapp.recipe"
+22-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:13:13-35
+23            android:exported="false" />
+23-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:14:13-37
+24        <activity android:name="com.example.recipeapp.Cart" />
+24-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:16:9-42
+24-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:16:19-39
+25        <activity android:name="com.example.recipeapp.MainActivity" >
+25-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:18:9-24:20
+25-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:18:19-47
+26            <intent-filter>
+26-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:19:13-23:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:20:17-69
+27-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:20:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:22:17-77
+29-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:22:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>

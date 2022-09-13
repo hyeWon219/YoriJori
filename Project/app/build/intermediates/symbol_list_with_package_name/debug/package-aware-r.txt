@@ -2370,6 +2370,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout layout_recipe
 layout main_custompopup
 layout main_custompopup_chinese
 layout main_custompopup_japanese

@@ -101,6 +101,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+        Button button_recipe = findViewById(R.id.RecipeBook_Button);
+        button_recipe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, recipe.class);
+                startActivity(myIntent);
+            }
+        });
     }
 
     //커스텀 팝업 함수

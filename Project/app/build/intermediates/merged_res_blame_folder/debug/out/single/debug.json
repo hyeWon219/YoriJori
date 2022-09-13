@@ -112,6 +112,10 @@
         "source": "com.example.recipeapp-main-23:/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "com.example.recipeapp-merged_res-21:/layout_layout_recipe.xml.flat",
+        "source": "com.example.recipeapp-main-23:/layout/layout_recipe.xml"
+    },
+    {
         "merged": "com.example.recipeapp-merged_res-21:/drawable_rect5.xml.flat",
         "source": "com.example.recipeapp-main-23:/drawable/rect5.xml"
     },
