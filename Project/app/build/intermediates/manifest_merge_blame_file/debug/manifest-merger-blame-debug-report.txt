@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\GitHub\Project\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.5.0] C:\Users\user\.gradle\caches\transforms-3\4cb2d3ae910a25e4d3b75b6b0d8d1b11\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.5.0] C:\Users\82108\.gradle\caches\transforms-3\09dce287f966ede6f56d2bc091f83727\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
 15-->C:\GitHub\Project\app\src\main\AndroidManifest.xml:7:9-43

@@ -18,6 +18,110 @@
         android:layout_height="match_parent"
         android:background="#FFFFFF">
 
+        <Button
+            android:id="@+id/recipeBook_Button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/book"
+            android:contentDescription="@string/app_name"
+            app:backgroundTint="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/textView16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/Setting_Button"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="82dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="5dp"
+            android:text="Recipe Book"
+            app:layout_constraintBottom_toTopOf="@+id/cart_Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/recipeBook_Button" />
+
+        <Button
+            android:id="@+id/cart_Button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/shopping_cart"
+            android:contentDescription="@string/app_name"
+            app:backgroundTint="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/info_Button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/user"
+            android:contentDescription="@string/app_name"
+            app:backgroundTint="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Cart"
+            app:layout_constraintBottom_toTopOf="@+id/info_Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/cart_Button" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="41dp"
+            android:text="Info"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/info_Button" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="310dp"
@@ -34,67 +138,20 @@
 
         <Button
             android:id="@+id/Setting_Button"
-            android:layout_width="55dp"
-            android:layout_height="49dp"
-            android:text="Setting"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/edit"
+            android:text=" "
+            app:backgroundTint="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.988"
+            app:layout_constraintHorizontal_bias="0.983"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.007"
-            tools:ignore="MissingConstraints" />
-
-        <View
-            android:id="@+id/view2"
-            android:layout_width="345dp"
-            android:layout_height="210dp"
-            android:background="@drawable/rect2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.823"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/Item_Button"
-            android:layout_width="60dp"
-            android:layout_height="58dp"
-            android:text="Item"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.928"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.442"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/RecipeBook_Button"
-            android:layout_width="60dp"
-            android:layout_height="58dp"
-            android:text="R Book"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.928"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.243"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/Cart_Button"
-            android:layout_width="60dp"
-            android:layout_height="58dp"
-            android:text="Cart"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.928"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.342"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.008"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <View
             android:id="@+id/view"
@@ -109,6 +166,17 @@
             app:layout_constraintVertical_bias="0.285"
             tools:ignore="MissingConstraints" />
 
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="259dp"
+            android:layout_height="184dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.171"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.288" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -120,19 +188,45 @@
             app:layout_constraintHorizontal_bias="0.348"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.467"
             tools:ignore="MissingConstraints" />
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager2"
-            android:layout_width="259dp"
-            android:layout_height="184dp"
+        <View
+            android:id="@+id/view2"
+            android:layout_width="345dp"
+            android:layout_height="210dp"
+            android:background="@drawable/rect2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.288" />
+            app:layout_constraintVertical_bias="0.823"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="260dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Recommend"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.247"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.619" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

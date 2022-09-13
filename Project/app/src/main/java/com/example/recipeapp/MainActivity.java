@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Dialog custompopup_c;
     Dialog custompopup_w;
     Dialog custompopup_j;
+    Dialog infoDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
         custompopup_j.requestWindowFeature(Window.FEATURE_NO_TITLE);
         custompopup_j.setContentView(R.layout.main_custompopup_japanese);
         custompopup_j.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        infoDialog=new Dialog(MainActivity.this);
+        infoDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        infoDialog.setContentView(R.layout.info_custompopup);
+        infoDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         Button settingButton = findViewById(R.id.Setting_Button);
         settingButton.setOnClickListener(new View.OnClickListener(){
@@ -92,8 +98,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button infoButton=findViewById(R.id.info_Button);
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showInfopopup();
+            }
+        });
+
         //cart 페이지 이동을 위한 버튼 변수와 리스너 추가
-        Button button_cart = findViewById(R.id.Cart_Button);
+        Button button_cart = findViewById(R.id.cart_Button);
         button_cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,6 +118,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //커스텀 팝업 함수
+    public void showInfopopup() {
+        infoDialog.show();
+
+        //기능 구현
+    }
+
     public void showCustomJpopup() {
         custompopup_j.show();
 
