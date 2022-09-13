@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.RecipeApp" >
+        <activity
+            android:name="com.example.recipeapp.recipe"
+            android:exported="false" />
         <activity android:name="com.example.recipeapp.Cart" />
         <activity android:name="com.example.recipeapp.MainActivity" >
             <intent-filter>
@@ -26,7 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.recipeapp.Cart" />
     </application>
 
 </manifest>
