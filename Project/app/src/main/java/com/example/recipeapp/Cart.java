@@ -27,6 +27,8 @@ public class Cart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
+        context_cart = this;
+
         TextView recipeContentName = findViewById(R.id.recipe_name);
         TextView recipeContentText = findViewById(R.id.recipeText);
 
@@ -51,7 +53,25 @@ public class Cart extends AppCompatActivity {
                 reicpe7, reicpe8, reicpe9, reicpe10, reicpe11, reicpe12,
                 reicpe13, reicpe14, reicpe15, reicpe16 };
 
-        context_cart = this;
+        TextView name1 = findViewById(R.id.name1);
+        TextView name2 = findViewById(R.id.name2);
+        TextView name3 = findViewById(R.id.name3);
+        TextView name4 = findViewById(R.id.name4);
+        TextView name5 = findViewById(R.id.name5);
+        TextView name6 = findViewById(R.id.name6);
+        TextView name7 = findViewById(R.id.name7);
+        TextView name8 = findViewById(R.id.name8);
+        TextView name9 = findViewById(R.id.name9);
+        TextView name10 = findViewById(R.id.name10);
+        TextView name11 = findViewById(R.id.name11);
+        TextView name12 = findViewById(R.id.name12);
+        TextView name13 = findViewById(R.id.name13);
+        TextView name14 = findViewById(R.id.name14);
+        TextView name15 = findViewById(R.id.name15);
+        TextView name16 = findViewById(R.id.name16);
+
+        recipeName = new TextView[] { name1, name2, name3, name4, name5, name6, name7, name8,
+                                    name9, name10, name11, name12, name13, name14, name15, name16 };
 
         ImageButton buttonBack = findViewById(R.id.backToHome);
         buttonBack.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +97,7 @@ public class Cart extends AppCompatActivity {
         reicpe1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //recipeContentName.text =
+                recipeContentName.setText(recipeName[0].getText());
                 //recipeContentText.setText(recipeContent[0]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
