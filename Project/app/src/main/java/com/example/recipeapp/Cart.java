@@ -18,9 +18,10 @@ public class Cart extends AppCompatActivity {
 
     public FrameLayout[] recipe;
     public TextView[] recipeName;
+    public TextView[] recipeKind;
     public String[] recipeContent;
 
-    public int count = 0;
+    int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,27 @@ public class Cart extends AppCompatActivity {
         recipeName = new TextView[] { name1, name2, name3, name4, name5, name6, name7, name8,
                                     name9, name10, name11, name12, name13, name14, name15, name16 };
 
+        TextView kind1 = findViewById(R.id.kind1);
+        TextView kind2 = findViewById(R.id.kind2);
+        TextView kind3 = findViewById(R.id.kind3);
+        TextView kind4 = findViewById(R.id.kind4);
+        TextView kind5 = findViewById(R.id.kind5);
+        TextView kind6 = findViewById(R.id.kind6);
+        TextView kind7 = findViewById(R.id.kind7);
+        TextView kind8 = findViewById(R.id.kind8);
+        TextView kind9 = findViewById(R.id.kind9);
+        TextView kind10 = findViewById(R.id.kind10);
+        TextView kind11 = findViewById(R.id.kind11);
+        TextView kind12 = findViewById(R.id.kind12);
+        TextView kind13 = findViewById(R.id.kind13);
+        TextView kind14 = findViewById(R.id.kind14);
+        TextView kind15 = findViewById(R.id.kind15);
+        TextView kind16 = findViewById(R.id.kind16);
+
+        recipeKind = new TextView[] { kind1, kind2, kind3, kind4, kind5, kind6, kind7, kind8,
+                                    kind9, kind10, kind11, kind12, kind13, kind14, kind15, kind16 };
+
+
         ImageButton buttonBack = findViewById(R.id.backToHome);
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +110,7 @@ public class Cart extends AppCompatActivity {
         recipeDown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText("음식 이름");
                 recipeFrame.setVisibility(View.INVISIBLE);
             }
         });
@@ -107,6 +130,8 @@ public class Cart extends AppCompatActivity {
         reicpe2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[1].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -114,6 +139,8 @@ public class Cart extends AppCompatActivity {
         reicpe3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[2].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -121,6 +148,8 @@ public class Cart extends AppCompatActivity {
         reicpe4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[3].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -128,6 +157,8 @@ public class Cart extends AppCompatActivity {
         reicpe5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[4].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -135,6 +166,8 @@ public class Cart extends AppCompatActivity {
         reicpe6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[5].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -142,6 +175,8 @@ public class Cart extends AppCompatActivity {
         reicpe7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[6].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -149,6 +184,8 @@ public class Cart extends AppCompatActivity {
         reicpe8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[7].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -156,6 +193,8 @@ public class Cart extends AppCompatActivity {
         reicpe9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[8].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -163,6 +202,8 @@ public class Cart extends AppCompatActivity {
         reicpe10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[9].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -170,6 +211,8 @@ public class Cart extends AppCompatActivity {
         reicpe11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[10].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -177,6 +220,8 @@ public class Cart extends AppCompatActivity {
         reicpe12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[11].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -184,6 +229,8 @@ public class Cart extends AppCompatActivity {
         reicpe13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[12].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -191,6 +238,8 @@ public class Cart extends AppCompatActivity {
         reicpe14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[13].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -198,6 +247,8 @@ public class Cart extends AppCompatActivity {
         reicpe15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[14].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
@@ -205,8 +256,16 @@ public class Cart extends AppCompatActivity {
         reicpe16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                recipeContentName.setText(recipeName[15].getText());
+
                 recipeFrame.setVisibility(View.VISIBLE);
             }
         });
+    }
+
+    public void KeepRecipe(TextView name){
+        recipeName[count].setText(name.getText());
+
+        count += 1;
     }
 }
