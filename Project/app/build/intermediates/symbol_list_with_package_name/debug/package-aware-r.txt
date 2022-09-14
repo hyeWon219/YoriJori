@@ -1935,7 +1935,6 @@ id expanded
 id expanded_menu
 id fade
 id fill
-id fillStarView
 id fill_horizontal
 id fill_vertical
 id filled
