@@ -11,8 +11,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class Cart extends AppCompatActivity {
     public static Context context_cart;
 
@@ -30,8 +28,8 @@ public class Cart extends AppCompatActivity {
 
         context_cart = this;
 
-        TextView recipeContentName = findViewById(R.id.recipe_name);
-        TextView recipeContentText = findViewById(R.id.recipeText);
+        TextView recipeContentName = findViewById(R.id.detailRecipeName);
+        TextView recipeContentText = findViewById(R.id.detailRecipehowToCook);
 
         FrameLayout reicpe1 = findViewById(R.id.recipe_1);
         FrameLayout reicpe2 = findViewById(R.id.recipe_2);
@@ -106,7 +104,7 @@ public class Cart extends AppCompatActivity {
         });
 
         FrameLayout recipeFrame = findViewById(R.id.recipeFrame);
-        Button recipeDown = findViewById(R.id.button11);
+        Button recipeDown = findViewById(R.id.detailRecipeCloseButton);
         recipeDown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

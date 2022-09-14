@@ -1671,6 +1671,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit
+drawable fill_star
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1679,6 +1680,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable knife
 drawable layout_background
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -1719,6 +1721,7 @@ drawable rect4
 drawable rect5
 drawable rect6
 drawable shopping_cart
+drawable star
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1817,7 +1820,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button11
 id button5
 id button6
 id button7
@@ -1878,7 +1880,6 @@ id container
 id content
 id contentPanel
 id contiguous
-id cookImage
 id coordinator
 id cos
 id counterclockwise
@@ -1897,6 +1898,13 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailRecipeCloseButton
+id detailRecipeFrame
+id detailRecipeFrameLayout
+id detailRecipeImage
+id detailRecipeName
+id detailRecipeView
+id detailRecipehowToCook
 id dialog_button
 id dimensions
 id direct
@@ -1927,6 +1935,7 @@ id expanded
 id expanded_menu
 id fade
 id fill
+id fillStarView
 id fill_horizontal
 id fill_vertical
 id filled
@@ -1936,8 +1945,10 @@ id fixed
 id flip
 id floating
 id foodImage
+id foodImage1
 id foodImage2
 id foodName
+id foodName1
 id foodName2
 id forever
 id fragment_container_view_tag
@@ -1968,6 +1979,7 @@ id imageView
 id imageView2
 id info
 id info_Button
+id ingredientText1
 id invisible
 id inward
 id italic
@@ -2110,7 +2122,6 @@ id radio
 id ratio
 id recipeBook_Button
 id recipeFrame
-id recipeText
 id recipe_1
 id recipe_10
 id recipe_11
@@ -2127,7 +2138,6 @@ id recipe_6
 id recipe_7
 id recipe_8
 id recipe_9
-id recipe_name
 id rectangles
 id reverseSawtooth
 id right
@@ -2184,6 +2194,7 @@ id src_atop
 id src_in
 id src_over
 id standard
+id starView
 id start
 id startHorizontal
 id startToEnd
@@ -2279,7 +2290,6 @@ id view29
 id view3
 id view31
 id view32
-id view38
 id view8
 id viewPager2
 id view_offset_helper

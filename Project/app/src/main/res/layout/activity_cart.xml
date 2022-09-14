@@ -828,7 +828,7 @@
         android:visibility="invisible">
 
         <View
-            android:id="@+id/view38"
+            android:id="@+id/detailRecipeFrame"
             android:layout_width="380dp"
             android:layout_height="500dp"
             android:background="@drawable/rect5"
@@ -837,7 +837,7 @@
             android:visibility="visible" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/detailRecipeCloseButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@android:drawable/btn_dialog"
@@ -846,7 +846,7 @@
             app:backgroundTint="@android:color/background_light" />
 
         <ImageView
-            android:id="@+id/cookImage"
+            android:id="@+id/detailRecipeImage"
             android:layout_width="300dp"
             android:layout_height="150dp"
             android:translationX="55dp"
@@ -865,7 +865,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/recipe_name"
+                    android:id="@+id/detailRecipeName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="음식이름"
@@ -879,7 +879,7 @@
                     android:layout_height="15dp" />
 
                 <TextView
-                    android:id="@+id/recipeText"
+                    android:id="@+id/detailRecipehowToCook"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:text="내용"
