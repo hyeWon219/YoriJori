@@ -11,7 +11,7 @@
 9-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:5:5-26:19
+11-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:5:5-29:19
 12        android:allowBackup="true"
 12-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -30,33 +30,39 @@
 20-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:11:9-47
 21        <activity
 21-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:12:9-14:40
-22            android:name="com.example.recipeapp.MyRecipe"
-22-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:13:13-37
+22            android:name="com.example.recipeapp.TestActivity"
+22-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:13:13-41
 23            android:exported="false" />
 23-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:14:13-37
 24        <activity
 24-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:15:9-17:40
-25            android:name="com.example.recipeapp.recipe"
-25-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:16:13-35
+25            android:name="com.example.recipeapp.MyRecipe"
+25-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:16:13-37
 26            android:exported="false" />
 26-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:17:13-37
-27        <activity android:name="com.example.recipeapp.Cart" />
-27-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:18:9-42
-27-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:18:19-39
-28        <activity android:name="com.example.recipeapp.MainActivity" >
-28-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:19:9-25:20
-28-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:19:19-47
-29            <intent-filter>
-29-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:20:13-24:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:21:17-69
-30-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:21:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:23:17-77
-32-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:23:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+27        <activity
+27-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:18:9-20:40
+28            android:name="com.example.recipeapp.recipe"
+28-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:19:13-35
+29            android:exported="false" />
+29-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:20:13-37
+30        <activity android:name="com.example.recipeapp.Cart" />
+30-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:21:9-42
+30-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:21:19-39
+31        <activity android:name="com.example.recipeapp.MainActivity" >
+31-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:22:9-28:20
+31-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:22:19-47
+32            <intent-filter>
+32-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:23:13-27:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:24:17-69
+33-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:24:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:26:17-77
+35-->D:\GitHub\RecipeApp\Project\app\src\main\AndroidManifest.xml:26:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

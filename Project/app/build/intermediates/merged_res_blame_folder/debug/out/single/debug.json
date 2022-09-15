@@ -4,12 +4,12 @@
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\drawable-v24\\img_14.png"
     },
     {
-        "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-16:\\drawable-xxxhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\layout_layout_recipe.xml.flat",
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\layout\\layout_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-pngs-16:\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -26,6 +26,10 @@
     {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable_rect2.xml.flat",
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\drawable\\rect2.xml"
+    },
+    {
+        "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable_smallspoon.jpg.flat",
+        "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\drawable\\smallspoon.jpg"
     },
     {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable-v24_img_7.png.flat",
@@ -64,10 +68,6 @@
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\drawable-v24\\img_21.png"
     },
     {
-        "merged": "com.example.recipeapp-merged_res-21:/drawable_smallspoon.jpg.flat",
-        "source": "com.example.recipeapp-main-23:/drawable/smallspoon.jpg"
-    },
-    {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable-v24_img_26.png.flat",
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\drawable-v24\\img_26.png"
     },
@@ -92,10 +92,6 @@
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\drawable-v24\\img_32.png"
     },
     {
-        "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\layout_activity_recipe.xml.flat",
-        "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\layout\\activity_recipe.xml"
-    },
-    {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -114,10 +110,6 @@
     {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable_rect3.xml.flat",
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\drawable\\rect3.xml"
-    },
-    {
-        "merged": "com.example.recipeapp-merged_res-21:/layout_activity_my_recipe.xml.flat",
-        "source": "com.example.recipeapp-main-23:/layout/activity_my_recipe.xml"
     },
     {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\layout_main_custompopup_western.xml.flat",
@@ -142,6 +134,10 @@
     {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable_rect6.xml.flat",
         "source": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-main-23:\\drawable\\rect6.xml"
+    },
+    {
+        "merged": "com.example.recipeapp-merged_res-21:/layout_activity_test.xml.flat",
+        "source": "com.example.recipeapp-main-23:/layout/activity_test.xml"
     },
     {
         "merged": "C:\\Users\\gpdnj\\.gradle\\daemon\\7.3.3\\com.example.recipeapp-merged_res-21:\\drawable-mdpi_ic_launcher_background.png.flat",

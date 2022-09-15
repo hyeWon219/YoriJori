@@ -1866,6 +1866,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id button
 id button11
 id button5
 id button6
@@ -1916,8 +1917,6 @@ id chip_group
 id chronometer
 id circle_center
 id clear_text
-id clickLayout1
-id clickLayout2
 id clip_horizontal
 id clip_vertical
 id clockwise
@@ -1990,7 +1989,6 @@ id fitToContents
 id fixed
 id flip
 id floating
-id foodImage
 id foodImage1
 id foodImage10
 id foodImage11
@@ -2033,7 +2031,6 @@ id foodImage6
 id foodImage7
 id foodImage8
 id foodImage9
-id foodName
 id foodName1
 id foodName10
 id foodName11
@@ -2282,8 +2279,6 @@ id off
 id on
 id outline
 id outward
-id oxText
-id oxText2
 id packed
 id parallax
 id parent
@@ -2297,8 +2292,6 @@ id peekHeight
 id percent
 id pin
 id position
-id possibilityText
-id possibilityText2
 id postLayout
 id progress_circular
 id progress_horizontal
@@ -2461,6 +2454,7 @@ id textTop
 id textView
 id textView10
 id textView11
+id textView12
 id textView15
 id textView16
 id textView18
@@ -2595,7 +2589,7 @@ layout abc_tooltip
 layout activity_cart
 layout activity_main
 layout activity_my_recipe
-layout activity_recipe
+layout activity_test
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
