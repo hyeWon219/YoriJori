@@ -1864,6 +1864,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id button11
 id button5
 id button6
 id button7
@@ -1924,6 +1925,7 @@ id container
 id content
 id contentPanel
 id contiguous
+id cookImage
 id coordinator
 id cos
 id counterclockwise
@@ -1943,13 +1945,11 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id detailRecipeCloseButton
-id detailRecipeFrame
 id detailRecipeFrameLayout
 id detailRecipeHowToCook
 id detailRecipeImage
 id detailRecipeName
 id detailRecipeView
-id detailRecipehowToCook
 id dialog_button
 id dimensions
 id direct
@@ -2285,6 +2285,7 @@ id radio
 id ratio
 id recipeBook_Button
 id recipeFrame
+id recipeText
 id recipe_1
 id recipe_10
 id recipe_11
@@ -2301,6 +2302,7 @@ id recipe_6
 id recipe_7
 id recipe_8
 id recipe_9
+id recipe_name
 id rectangles
 id reverseSawtooth
 id right
@@ -2494,6 +2496,7 @@ id view29
 id view3
 id view31
 id view32
+id view38
 id view8
 id viewPager2
 id view_offset_helper
