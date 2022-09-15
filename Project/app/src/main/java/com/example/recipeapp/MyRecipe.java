@@ -27,9 +27,6 @@ public class MyRecipe extends AppCompatActivity {
         setContentView(R.layout.activity_my_recipe);
         context_my_recipe = this;
 
-        TextView countText = findViewById(R.id.textView12);
-        countText.setText(count);
-
         TextView recipeContentName = findViewById(R.id.recipe_name);
         TextView recipeContentText = findViewById(R.id.recipeText);
 

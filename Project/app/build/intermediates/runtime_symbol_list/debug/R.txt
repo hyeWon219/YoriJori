@@ -1865,7 +1865,6 @@ int id beginning 0x7f08005b
 int id blocking 0x7f08005c
 int id bottom 0x7f08005d
 int id bounce 0x7f08005e
-int id button 0x7f0802f2
 int id button11 0x7f08005f
 int id button5 0x7f080060
 int id button6 0x7f080061
@@ -2453,7 +2452,6 @@ int id textTop 0x7f0802a6
 int id textView 0x7f0802a7
 int id textView10 0x7f0802a8
 int id textView11 0x7f0802a9
-int id textView12 0x7f0802f1
 int id textView15 0x7f0802aa
 int id textView16 0x7f0802ab
 int id textView18 0x7f0802ac
@@ -2588,7 +2586,6 @@ int layout abc_tooltip 0x7f0b001b
 int layout activity_cart 0x7f0b001c
 int layout activity_main 0x7f0b001d
 int layout activity_my_recipe 0x7f0b001e
-int layout activity_test 0x7f0b0081
 int layout custom_dialog 0x7f0b001f
 int layout design_bottom_navigation_item 0x7f0b0020
 int layout design_bottom_sheet_dialog 0x7f0b0021

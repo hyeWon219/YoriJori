@@ -1866,7 +1866,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button
 id button11
 id button5
 id button6
@@ -2454,7 +2453,6 @@ id textTop
 id textView
 id textView10
 id textView11
-id textView12
 id textView15
 id textView16
 id textView18
@@ -2589,7 +2587,6 @@ layout abc_tooltip
 layout activity_cart
 layout activity_main
 layout activity_my_recipe
-layout activity_test
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

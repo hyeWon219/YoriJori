@@ -19,9 +19,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.RecipeApp" >
         <activity
-            android:name="com.example.recipeapp.TestActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.recipeapp.MyRecipe"
             android:exported="false" />
         <activity
