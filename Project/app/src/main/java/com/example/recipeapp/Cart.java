@@ -19,7 +19,7 @@ public class Cart extends AppCompatActivity {
     public FrameLayout[] recipe;
     public TextView[] recipeName;
     public TextView[] recipeKind;
-    public String[] recipeContent;
+    public TextView[] recipeContent;
 
     int count = 0;
 
