@@ -40,6 +40,8 @@ public class recipe extends AppCompatActivity{
     TextView detailRecipeName;
     TextView detailRecipeHowToCook;
 
+    ImageView detailRecipeImage;
+
 
     ImageView foodImage;
 
@@ -366,6 +368,7 @@ public class recipe extends AppCompatActivity{
         detailRecipeFrameLayout = findViewById(R.id.detailRecipeFrameLayout);
         detailRecipeName=findViewById(R.id.detailRecipeName);
         detailRecipeHowToCook=findViewById(R.id.detailRecipeHowToCook);
+        detailRecipeImage=findViewById(R.id.detailRecipeImage);
         detailRecipeFrameLayout.setVisibility(View.INVISIBLE);
 
         //레시피버튼
@@ -415,6 +418,7 @@ public class recipe extends AppCompatActivity{
             String recipeFoodName=recipeFoodNameArr[i];
             String recipeHowToCook=detailRecipeHowToCookArr[i];
             int viewId=getResources().getIdentifier("foodImage"+i,"id",packageName);
+            int imgId=getResources().getIdentifier("img_"+i,"drawable",packageName);
             foodImage=findViewById(viewId);
             foodImage.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -422,6 +426,7 @@ public class recipe extends AppCompatActivity{
                     detailRecipeFrameLayout.setVisibility(View.VISIBLE);
                     detailRecipeName.setText(recipeFoodName);
                     detailRecipeHowToCook.setText(recipeHowToCook);
+                    detailRecipeImage.setImageResource(imgId);
                 }});
             }}
 
@@ -433,6 +438,7 @@ public class recipe extends AppCompatActivity{
             String recipeFoodName=recipeFoodNameArr[i];
             String recipeHowToCook=detailRecipeHowToCookArr[i];
             int viewId=getResources().getIdentifier("foodName"+i,"id",packageName);
+            int imgId=getResources().getIdentifier("img_"+i,"drawable",packageName);
             foodName=findViewById(viewId);
             foodName.setText(recipeFoodName);
             foodName.setOnClickListener(new View.OnClickListener() {
@@ -441,6 +447,8 @@ public class recipe extends AppCompatActivity{
                     detailRecipeFrameLayout.setVisibility(View.VISIBLE);
                     detailRecipeName.setText(recipeFoodName);
                     detailRecipeHowToCook.setText(recipeHowToCook);
+                    detailRecipeImage.setImageResource(imgId);
+
                 }
             });
 
@@ -454,6 +462,7 @@ public class recipe extends AppCompatActivity{
             String recipeHowToCook=detailRecipeHowToCookArr[i];
             String recipeIngredient=recipeIngredientArr[i];
             int viewId=getResources().getIdentifier("ingredientText"+i,"id",packageName);
+            int imgId=getResources().getIdentifier("img_"+i,"drawable",packageName);
             ingredientText=findViewById(viewId);
             ingredientText.setText(recipeIngredient);
             ingredientText.setTextSize(12); //사이즈
@@ -464,6 +473,7 @@ public class recipe extends AppCompatActivity{
                     detailRecipeFrameLayout.setVisibility(View.VISIBLE);
                     detailRecipeName.setText(recipeFoodName);
                     detailRecipeHowToCook.setText(recipeHowToCook);
+                    detailRecipeImage.setImageResource(imgId);
                 }
             });
 
