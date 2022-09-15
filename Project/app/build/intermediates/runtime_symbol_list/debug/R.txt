@@ -1764,6 +1764,7 @@ int drawable rect4 0x7f0700c4
 int drawable rect5 0x7f0700c5
 int drawable rect6 0x7f0700c6
 int drawable shopping_cart 0x7f0700c7
+int drawable smallspoon 0x7f0700cd
 int drawable star 0x7f0700c8
 int drawable test_custom_background 0x7f0700c9
 int drawable tooltip_frame_dark 0x7f0700ca
@@ -1855,6 +1856,7 @@ int id autoComplete 0x7f080052
 int id autoCompleteToEnd 0x7f080053
 int id autoCompleteToStart 0x7f080054
 int id backToHome 0x7f080055
+int id backToHome2 0x7f0802e4
 int id back_layout 0x7f080056
 int id barrier 0x7f080057
 int id baseline 0x7f080058
@@ -1897,6 +1899,7 @@ int id cache_measures 0x7f08007c
 int id cancel_action 0x7f08007d
 int id cancel_button 0x7f08007e
 int id cart_Button 0x7f08007f
+int id cart_name 0x7f0802e5
 int id center 0x7f080080
 int id center_horizontal 0x7f080081
 int id center_vertical 0x7f080082
@@ -2097,7 +2100,25 @@ int id ignoreRequest 0x7f080144
 int id image 0x7f080145
 int id imageButton 0x7f080146
 int id imageButton2 0x7f080147
+int id imageButton3 0x7f0802e6
+int id imageButton4 0x7f0802e7
+int id imageView 0x7f0802e9
+int id imageView10 0x7f0802ea
+int id imageView11 0x7f0802eb
+int id imageView12 0x7f0802ec
+int id imageView13 0x7f0802ed
+int id imageView14 0x7f0802ee
+int id imageView15 0x7f0802ef
+int id imageView16 0x7f0802f0
+int id imageView17 0x7f0802f1
 int id imageView2 0x7f080148
+int id imageView3 0x7f0802f2
+int id imageView4 0x7f0802f3
+int id imageView5 0x7f0802f4
+int id imageView6 0x7f0802f5
+int id imageView7 0x7f0802f6
+int id imageView8 0x7f0802f7
+int id imageView9 0x7f0802f8
 int id info 0x7f080149
 int id info_Button 0x7f08014a
 int id ingredientText1 0x7f08014b
@@ -2447,6 +2468,7 @@ int id textView2 0x7f0802a2
 int id textView3 0x7f0802a3
 int id textView4 0x7f0802a4
 int id textView5 0x7f0802a5
+int id textView6 0x7f0802e8
 int id textView7 0x7f0802a6
 int id textView8 0x7f0802a7
 int id textView9 0x7f0802a8
@@ -2571,6 +2593,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_cart 0x7f0b001c
 int layout activity_main 0x7f0b001d
+int layout activity_my_recipe 0x7f0b0081
 int layout activity_recipe 0x7f0b001e
 int layout custom_dialog 0x7f0b001f
 int layout design_bottom_navigation_item 0x7f0b0020
