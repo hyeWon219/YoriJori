@@ -1,5 +1,7 @@
 package com.example.recipeapp;
 
+import static com.example.recipeapp.MyRecipe.context_my_recipe;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -403,8 +405,6 @@ public class recipe extends AppCompatActivity{
                 showSettingDialog();
             }
         });
-
-
     }
 
     public void showSettingDialog() {
@@ -483,16 +483,16 @@ public class recipe extends AppCompatActivity{
     private void initStarButton(){
         String packageName=getPackageName();
         for(int i=1;i<=num;i++){
+            String recipeFoodName=recipeFoodNameArr[i];
+
             int viewId=getResources().getIdentifier("starButton"+i,"id",packageName);
             starButton=findViewById(viewId);
             starButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
                     if(imageIndex==true){
                         starButton.setImageResource(R.drawable.fill_star);
                         imageIndex=false;
-
                     }else{
                         starButton.setImageResource(R.drawable.star);
                         imageIndex=true;
@@ -515,11 +515,10 @@ public class recipe extends AppCompatActivity{
 
     }
 
+
     public void recipeOpen_starButton(){
         initStarButton();
 
     }
-
-
 }
 

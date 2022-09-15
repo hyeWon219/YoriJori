@@ -17,7 +17,7 @@ public class Cart extends AppCompatActivity {
     public FrameLayout[] recipe;
     public TextView[] recipeName;
     public TextView[] recipeKind;
-    public String[] recipeContent;
+    public TextView[] recipeContent;
 
     int count = 0;
 
@@ -28,8 +28,8 @@ public class Cart extends AppCompatActivity {
 
         context_cart = this;
 
-        TextView recipeContentName = findViewById(R.id.detailRecipeName);
-        TextView recipeContentText = findViewById(R.id.detailRecipehowToCook);
+        TextView recipeContentName = findViewById(R.id.recipe_name);
+        TextView recipeContentText = findViewById(R.id.recipeText);
 
         FrameLayout reicpe1 = findViewById(R.id.recipe_1);
         FrameLayout reicpe2 = findViewById(R.id.recipe_2);

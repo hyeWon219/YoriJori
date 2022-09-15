@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         button_cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this, Cart.class);
+                Intent myIntent = new Intent(MainActivity.this, MyRecipe.class);
                 startActivity(myIntent);
             }
         });
