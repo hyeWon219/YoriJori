@@ -10,7 +10,7 @@
         android:id="@+id/Cart_name"
         android:layout_width="381dp"
         android:layout_height="61dp"
-        android:text="Cart"
+        android:text="My Recipe"
         android:textColor="#000000"
         android:textSize="45sp"
         android:textStyle="bold"
@@ -20,11 +20,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999"
+        app:srcCompat="@drawable/list" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="397dp"
         android:layout_height="702dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="200dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,31 +49,17 @@
             android:layout_height="42dp"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/btn_dropdown" />
-
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="0.005dp"
+            <SearchView
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_search" />
+                android:layout_weight="1" />
 
-            <EditText
-                android:id="@+id/findText"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:inputType="text" />
         </LinearLayout>
 
         <View
@@ -75,37 +74,712 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="190dp"
-                    android:layout_height="593dp"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_1"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
 
                     <View
-                        android:id="@+id/view5"
-                        android:layout_width="match_parent"
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_2"
+                        android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:background="@drawable/rect2" />
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp"/>
+
+                        <TextView
+                            android:id="@+id/kind2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view9"
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:id="@+id/view19"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
                 <LinearLayout
-                    android:layout_width="190dp"
-                    android:layout_height="593dp"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_3"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
 
                     <View
-                        android:id="@+id/view7"
-                        android:layout_width="match_parent"
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_4"
+                        android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:background="@drawable/rect2" />
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
                 </LinearLayout>
+
+                <View
+                    android:id="@+id/view18"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_5"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_6"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view17"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_7"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_8"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view16"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_9"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_10"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view15"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_11"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_12"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view14"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_13"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_14"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_15"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_16"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <TextView
+                            android:id="@+id/name16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view32"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
             </LinearLayout>
         </ScrollView>
 
@@ -129,7 +803,7 @@
         android:enabled="false"
         android:text="No Item"
         android:textSize="36sp"
-        android:visibility="gone"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,4 +819,76 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <FrameLayout
+        android:id="@+id/recipeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:visibility="invisible">
+
+        <View
+            android:id="@+id/view38"
+            android:layout_width="380dp"
+            android:layout_height="500dp"
+            android:background="@drawable/rect5"
+            android:translationX="15dp"
+            android:translationY="120dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/btn_dialog"
+            android:translationX="330dp"
+            android:translationY="125dp"
+            app:backgroundTint="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cookImage"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:translationX="55dp"
+            android:translationY="180dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/recipe_name"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:text="음식이름"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:translationX="30dp"
+            android:translationY="350dp" />
+
+        <ScrollView
+            android:layout_width="341dp"
+            android:layout_height="211dp"
+            android:translationX="35dp"
+            android:translationY="380dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/recipeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:text="내용"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
