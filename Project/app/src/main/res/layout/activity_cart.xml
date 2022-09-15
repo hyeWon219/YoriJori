@@ -37,11 +37,11 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="1dp"
+                android:id="@+id/imageButton2"
+                android:layout_width="1px"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/btn_dropdown" />
+                app:srcCompat="@drawable/list" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -49,18 +49,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="0.005dp"
+            <SearchView
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_search" />
+                android:layout_weight="1" />
 
-            <EditText
-                android:id="@+id/findText"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:inputType="text" />
         </LinearLayout>
 
         <View
@@ -825,7 +818,8 @@
         android:id="@+id/recipeFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="invisible">
+        android:visibility="visible"
+        tools:visibility="invisible">
 
         <View
             android:id="@+id/view38"
@@ -853,25 +847,27 @@
             android:translationY="180dp"
             tools:srcCompat="@tools:sample/avatars" />
 
+        <TextView
+            android:id="@+id/recipe_name"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:text="음식이름"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:translationX="30dp"
+            android:translationY="350dp" />
+
         <ScrollView
             android:layout_width="341dp"
-            android:layout_height="246dp"
+            android:layout_height="211dp"
             android:translationX="35dp"
-            android:translationY="350dp">
+            android:translationY="380dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/recipe_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="음식이름"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
 
                 <View
                     android:id="@+id/view3"

@@ -1680,6 +1680,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable layout_background
+drawable list
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1930,7 +1931,6 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
-id findText
 id fitToContents
 id fixed
 id flip
@@ -1963,8 +1963,7 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
-id imageButton3
-id imageView
+id imageButton2
 id imageView2
 id info
 id info_Button
