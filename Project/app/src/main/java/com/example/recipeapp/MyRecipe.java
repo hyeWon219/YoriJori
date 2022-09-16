@@ -134,6 +134,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[1].getText());
+                recipeContentText.setText(recipeContent[1]);
+                cookingImage.setImageResource(recipeImage[1]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -143,6 +145,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[2].getText());
+                recipeContentText.setText(recipeContent[2]);
+                cookingImage.setImageResource(recipeImage[2]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -152,6 +156,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[3].getText());
+                recipeContentText.setText(recipeContent[3]);
+                cookingImage.setImageResource(recipeImage[3]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -161,6 +167,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[4].getText());
+                recipeContentText.setText(recipeContent[4]);
+                cookingImage.setImageResource(recipeImage[4]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -170,6 +178,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[5].getText());
+                recipeContentText.setText(recipeContent[5]);
+                cookingImage.setImageResource(recipeImage[5]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -179,6 +189,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[6].getText());
+                recipeContentText.setText(recipeContent[6]);
+                cookingImage.setImageResource(recipeImage[6]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -188,6 +200,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[7].getText());
+                recipeContentText.setText(recipeContent[7]);
+                cookingImage.setImageResource(recipeImage[7]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -197,6 +211,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[8].getText());
+                recipeContentText.setText(recipeContent[8]);
+                cookingImage.setImageResource(recipeImage[8]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -206,6 +222,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[9].getText());
+                recipeContentText.setText(recipeContent[9]);
+                cookingImage.setImageResource(recipeImage[9]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -215,6 +233,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[10].getText());
+                recipeContentText.setText(recipeContent[10]);
+                cookingImage.setImageResource(recipeImage[10]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -224,6 +244,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[11].getText());
+                recipeContentText.setText(recipeContent[11]);
+                cookingImage.setImageResource(recipeImage[11]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -233,6 +255,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[12].getText());
+                recipeContentText.setText(recipeContent[12]);
+                cookingImage.setImageResource(recipeImage[12]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -242,6 +266,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[13].getText());
+                recipeContentText.setText(recipeContent[13]);
+                cookingImage.setImageResource(recipeImage[13]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -251,6 +277,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[14].getText());
+                recipeContentText.setText(recipeContent[14]);
+                cookingImage.setImageResource(recipeImage[14]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -260,6 +288,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[15].getText());
+                recipeContentText.setText(recipeContent[15]);
+                cookingImage.setImageResource(recipeImage[15]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
