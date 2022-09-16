@@ -77,5 +77,4 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="RecipeApp.app.main" />
 </module>
