@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="310dp"
-    android:layout_height="380dp"
+    android:layout_height="300dp"
     android:background="@drawable/rect5">
 
     <TextView
@@ -38,23 +38,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_western5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="36dp"
-        android:text="Button"
-        android:textColor="#000000"
-        app:backgroundTint="#E0E0E0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_western6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_western3" />
-
-    <Button
         android:id="@+id/button_western3"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -62,11 +45,11 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="53dp"
         android:text="Button"
         android:textColor="#000000"
         app:backgroundTint="#E0E0E0"
-        app:layout_constraintBottom_toTopOf="@+id/button_western5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_western4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_western1" />
@@ -93,28 +76,13 @@
         android:layout_height="0dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="27dp"
-        android:text="Button"
-        android:textColor="#000000"
-        app:backgroundTint="#E0E0E0"
-        app:layout_constraintBottom_toTopOf="@+id/button_western6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_western3"
-        app:layout_constraintTop_toBottomOf="@+id/button_western2" />
-
-    <Button
-        android:id="@+id/button_western6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="53dp"
         android:text="Button"
         android:textColor="#000000"
         app:backgroundTint="#E0E0E0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_western5"
-        app:layout_constraintTop_toBottomOf="@+id/button_western4" />
+        app:layout_constraintStart_toEndOf="@+id/button_western3"
+        app:layout_constraintTop_toBottomOf="@+id/button_western2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

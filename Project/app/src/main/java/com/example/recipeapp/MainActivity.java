@@ -14,6 +14,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     //추후에 메인에 있는 변수 접근을 위해 선언한 변수
+    //japanese는 간식류 페이지
     public static Context context_main;
     Dialog settingDialog;
     Dialog custompopup_k;
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     Dialog custompopup_w;
     Dialog custompopup_j;
     Dialog infoDialog;
+
+    //음식 페이지
+    Dialog jokbal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
         infoDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         infoDialog.setContentView(R.layout.info_custompopup);
         infoDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        jokbal=new Dialog(MainActivity.this);
+        jokbal.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        jokbal.setContentView(R.layout.main_food_jokbal);
+        jokbal.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         Button settingButton = findViewById(R.id.Setting_Button);
         settingButton.setOnClickListener(new View.OnClickListener(){
@@ -106,6 +115,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button jButton=findViewById(R.id.button_korean1);
+        jButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){ showJpopup();}
+        });
+
         //cart 페이지 이동을 위한 버튼 변수와 리스너 추가
         Button button_cart = findViewById(R.id.cart_Button);
         button_cart.setOnClickListener(new View.OnClickListener() {
@@ -123,6 +138,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+    }
+
+    public void showJpopup() {
+        jokbal.show();
     }
 
     //커스텀 팝업 함수
