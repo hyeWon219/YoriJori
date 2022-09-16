@@ -2,8 +2,10 @@ package com.example.recipeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -19,10 +21,17 @@ public class MyRecipe extends AppCompatActivity {
     FrameLayout[] recipe;
     TextView[] recipeName;
     TextView[] recipeKind;
-    String[] recipeContent;
-    int[] recipeImage;
+    String[] recipeContent = new String[16];
+    int[] recipeImage = new int[16];
 
-    int count = 0;
+    int count;
+
+    int chkImg;
+    String chkContent;
+    String chkName;
+
+    SharedPreferences pref;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +39,14 @@ public class MyRecipe extends AppCompatActivity {
         setContentView(R.layout.activity_my_recipe);
         context_my_recipe = this;
 
+        pref = getPreferences(Activity.MODE_PRIVATE);
+        editor=pref.edit();
+        count = pref.getInt("count", 0);
+
         TextView noRecipe = findViewById(R.id.textView6);
         TextView recipeContentName = findViewById(R.id.recipe_name);
         TextView recipeContentText = findViewById(R.id.recipeText);
         ImageView cookingImage = findViewById(R.id.cookImage);
-
-        recipeContent = new String[16];
-        recipeImage = new int[16];
 
         FrameLayout reicpe1 = findViewById(R.id.recipe_1);
         FrameLayout reicpe2 = findViewById(R.id.recipe_2);
@@ -98,6 +108,20 @@ public class MyRecipe extends AppCompatActivity {
 
         recipeKind = new TextView[] { kind1, kind2, kind3, kind4, kind5, kind6, kind7, kind8,
                 kind9, kind10, kind11, kind12, kind13, kind14, kind15, kind16 };
+
+        for(int i=0; i <= count; i++){
+            chkImg = pref.getInt("img"+i , 0);
+            chkContent = pref.getString("content"+i, "");
+            chkName = pref.getString("name"+i, "");
+
+            recipeImage[i] = chkImg;
+            recipeContent[i] = chkContent;
+            recipeName[i].setText(chkName);
+
+            if(chkName != ""){
+                recipe[i].setVisibility(View.VISIBLE);
+            }
+        }
 
         KeepRecipe();
         if(count == 0){
@@ -306,11 +330,19 @@ public class MyRecipe extends AppCompatActivity {
 
         if(chk == true && count < 16){
             recipeImage[count] = img;
+            editor.putInt("img"+count,img);
+
             recipeContent[count] = content;
+            editor.putString("content"+count, content);
+
             recipeName[count].setText(name);
+            editor.putString("name"+count, name);
+
             recipe[count].setVisibility(View.VISIBLE);
 
             count += 1;
+            editor.putInt("count", count);
+            editor.apply();
         }
         System.out.print(count);
     }
