@@ -484,11 +484,16 @@ public class recipe extends AppCompatActivity{
         String packageName=getPackageName();
         for(int i=1;i<=num;i++){
             int viewId=getResources().getIdentifier("starButton"+i,"id",packageName);
+            int imgId=getResources().getIdentifier("img_"+i,"drawable",packageName);
 
             String recipeFoodName=recipeFoodNameArr[i];
+            String recipeHowToCook=detailRecipeHowToCookArr[i];
 
             Intent intent = new Intent(recipe.this, MyRecipe.class);
             intent.putExtra("제목", recipeFoodName);
+            intent.putExtra("내용",recipeHowToCook);
+            intent.putExtra("이미지",imgId);
+            intent.putExtra("확인",true);
 
             starButton=findViewById(viewId);
             starButton.setOnClickListener(new View.OnClickListener() {
@@ -502,11 +507,10 @@ public class recipe extends AppCompatActivity{
                     }
                     if(System.currentTimeMillis()<=delay){
                         //두번클릭
-                        startActivity(intent);
-                        ((MyRecipe)MyRecipe.context_my_recipe).KeepRecipe();
-
                         starButton=findViewById(viewId);
                         starButton.setImageResource(R.drawable.fill_star);
+
+                        startActivity(intent);
                     }
                 }
             });

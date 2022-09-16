@@ -85,7 +85,8 @@
                         android:id="@+id/recipe_1"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -134,7 +135,8 @@
                         android:id="@+id/recipe_2"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -189,7 +191,8 @@
                         android:id="@+id/recipe_3"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -238,7 +241,8 @@
                         android:id="@+id/recipe_4"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -293,7 +297,8 @@
                         android:id="@+id/recipe_5"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -342,7 +347,8 @@
                         android:id="@+id/recipe_6"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -397,7 +403,8 @@
                         android:id="@+id/recipe_7"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -446,7 +453,8 @@
                         android:id="@+id/recipe_8"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -501,7 +509,8 @@
                         android:id="@+id/recipe_9"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -550,7 +559,8 @@
                         android:id="@+id/recipe_10"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -605,7 +615,8 @@
                         android:id="@+id/recipe_11"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -654,7 +665,8 @@
                         android:id="@+id/recipe_12"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -709,7 +721,8 @@
                         android:id="@+id/recipe_13"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -758,7 +771,8 @@
                         android:id="@+id/recipe_14"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -813,7 +827,8 @@
                         android:id="@+id/recipe_15"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -862,7 +877,8 @@
                         android:id="@+id/recipe_16"
                         android:layout_width="240dp"
                         android:layout_height="100dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:visibility="invisible">
 
                         <View
                             android:id="@+id/view29"
@@ -929,9 +945,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:enabled="false"
-        android:text="No Item"
+        android:text="No Recipe"
         android:textSize="36sp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

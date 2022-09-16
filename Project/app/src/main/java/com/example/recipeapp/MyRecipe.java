@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MyRecipe extends AppCompatActivity {
@@ -18,6 +20,7 @@ public class MyRecipe extends AppCompatActivity {
     TextView[] recipeName;
     TextView[] recipeKind;
     String[] recipeContent;
+    int[] recipeImage;
 
     int count = 0;
 
@@ -27,10 +30,13 @@ public class MyRecipe extends AppCompatActivity {
         setContentView(R.layout.activity_my_recipe);
         context_my_recipe = this;
 
+        TextView noRecipe = findViewById(R.id.textView6);
         TextView recipeContentName = findViewById(R.id.recipe_name);
         TextView recipeContentText = findViewById(R.id.recipeText);
+        ImageView cookingImage = findViewById(R.id.cookImage);
 
         recipeContent = new String[16];
+        recipeImage = new int[16];
 
         FrameLayout reicpe1 = findViewById(R.id.recipe_1);
         FrameLayout reicpe2 = findViewById(R.id.recipe_2);
@@ -93,6 +99,13 @@ public class MyRecipe extends AppCompatActivity {
         recipeKind = new TextView[] { kind1, kind2, kind3, kind4, kind5, kind6, kind7, kind8,
                 kind9, kind10, kind11, kind12, kind13, kind14, kind15, kind16 };
 
+        KeepRecipe();
+        if(count == 0){
+            noRecipe.setVisibility(View.VISIBLE);
+        }else{
+            noRecipe.setVisibility(View.INVISIBLE);
+        }
+
 
         FrameLayout recipeFrame = findViewById(R.id.recipeFrame);
         Button recipeDown = findViewById(R.id.button11);
@@ -110,7 +123,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[0].getText());
-                //recipeContentText.setText(recipeContent[0]);
+                recipeContentText.setText(recipeContent[0]);
+                cookingImage.setImageResource(recipeImage[0]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -255,9 +269,19 @@ public class MyRecipe extends AppCompatActivity {
 
     public void KeepRecipe(){
         Intent intent = getIntent();
+        boolean chk = intent.getBooleanExtra("확인",false);
         String name = intent.getStringExtra("제목");
-        recipeName[count].setText(name);
-        count += 1;
+        String content = intent.getStringExtra("내용");
+        int img = intent.getIntExtra("이미지",0);
+
+        if(chk == true && count < 16){
+            recipeImage[count] = img;
+            recipeContent[count] = content;
+            recipeName[count].setText(name);
+            recipe[count].setVisibility(View.VISIBLE);
+
+            count += 1;
+        }
         System.out.print(count);
     }
 }
