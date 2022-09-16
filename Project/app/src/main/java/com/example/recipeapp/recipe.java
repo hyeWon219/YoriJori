@@ -3,13 +3,16 @@ package com.example.recipeapp;
 import static com.example.recipeapp.MyRecipe.context_my_recipe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
@@ -23,11 +26,9 @@ import android.widget.TextView;
 
 
 
-
 public class recipe extends AppCompatActivity{
 
     boolean imageIndex=true;
-
 
     int num=42; //xml때문에 음식 갯수 숫자로 입력
 
@@ -358,10 +359,8 @@ public class recipe extends AppCompatActivity{
     };
 
 
-
-
-
-
+    Drawable drawable,drawable2;
+    long delay=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -430,7 +429,7 @@ public class recipe extends AppCompatActivity{
                 }});
             }}
 
-  private void initFoodName(){
+    private void initFoodName(){
 
         String packageName=getPackageName();
 
@@ -454,6 +453,7 @@ public class recipe extends AppCompatActivity{
 
         }
     }
+
     private void initIngredientText(){
         String packageName=getPackageName();
 
@@ -483,6 +483,44 @@ public class recipe extends AppCompatActivity{
     private void initStarButton(){
         String packageName=getPackageName();
         for(int i=1;i<=num;i++){
+            int viewId=getResources().getIdentifier("starButton"+i,"id",packageName);
+            int imgId=getResources().getIdentifier("img_"+i,"drawable",packageName);
+
+            String recipeFoodName=recipeFoodNameArr[i];
+            String recipeHowToCook=detailRecipeHowToCookArr[i];
+
+            Intent intent = new Intent(recipe.this, MyRecipe.class);
+            intent.putExtra("제목", recipeFoodName);
+            intent.putExtra("내용",recipeHowToCook);
+            intent.putExtra("이미지",imgId);
+            intent.putExtra("확인",true);
+
+            starButton=findViewById(viewId);
+            starButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(System.currentTimeMillis()>delay){
+                        delay=System.currentTimeMillis()+200;
+                        starButton=findViewById(viewId);
+                        starButton.setImageResource(R.drawable.star);
+                        return;
+                    }
+                    if(System.currentTimeMillis()<=delay){
+                        //두번클릭
+                        starButton=findViewById(viewId);
+                        starButton.setImageResource(R.drawable.fill_star);
+
+                        startActivity(intent);
+                    }
+                }
+            });
+
+
+        }
+    }
+    /*  private void initStarButtonOFF(){
+        String packageName=getPackageName();
+        for(int i=1;i<=num;i++){
             String recipeFoodName=recipeFoodNameArr[i];
 
             int viewId=getResources().getIdentifier("starButton"+i,"id",packageName);
@@ -490,10 +528,12 @@ public class recipe extends AppCompatActivity{
             starButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(imageIndex==true){
-                        starButton.setImageResource(R.drawable.fill_star);
-                        imageIndex=false;
+                    if(imageIndex==false){
+                        starButton=findViewById(viewId);
+                        starButton.setImageResource(R.drawable.star);
+                        imageIndex=true;
                     }else{
+                        starButton=findViewById(viewId);
                         starButton.setImageResource(R.drawable.star);
                         imageIndex=true;
                     }
@@ -501,7 +541,7 @@ public class recipe extends AppCompatActivity{
             });
 
         }
-    }
+    }*/
 
     public void recipeOpen_foodImage(){
         initFoodImage();

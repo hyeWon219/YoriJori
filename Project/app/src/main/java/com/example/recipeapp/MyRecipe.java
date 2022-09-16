@@ -2,13 +2,17 @@ package com.example.recipeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MyRecipe extends AppCompatActivity {
@@ -17,9 +21,17 @@ public class MyRecipe extends AppCompatActivity {
     FrameLayout[] recipe;
     TextView[] recipeName;
     TextView[] recipeKind;
-    String[] recipeContent;
+    String[] recipeContent = new String[16];
+    int[] recipeImage = new int[16];
 
-    int count = 0;
+    int count;
+
+    int chkImg;
+    String chkContent;
+    String chkName;
+
+    SharedPreferences pref;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +39,14 @@ public class MyRecipe extends AppCompatActivity {
         setContentView(R.layout.activity_my_recipe);
         context_my_recipe = this;
 
+        pref = getPreferences(Activity.MODE_PRIVATE);
+        editor=pref.edit();
+        count = pref.getInt("count", 0);
+
+        TextView noRecipe = findViewById(R.id.textView6);
         TextView recipeContentName = findViewById(R.id.recipe_name);
         TextView recipeContentText = findViewById(R.id.recipeText);
-
-        recipeContent = new String[16];
+        ImageView cookingImage = findViewById(R.id.cookImage);
 
         FrameLayout reicpe1 = findViewById(R.id.recipe_1);
         FrameLayout reicpe2 = findViewById(R.id.recipe_2);
@@ -93,6 +109,27 @@ public class MyRecipe extends AppCompatActivity {
         recipeKind = new TextView[] { kind1, kind2, kind3, kind4, kind5, kind6, kind7, kind8,
                 kind9, kind10, kind11, kind12, kind13, kind14, kind15, kind16 };
 
+        for(int i=0; i <= count; i++){
+            chkImg = pref.getInt("img"+i , 0);
+            chkContent = pref.getString("content"+i, "");
+            chkName = pref.getString("name"+i, "");
+
+            recipeImage[i] = chkImg;
+            recipeContent[i] = chkContent;
+            recipeName[i].setText(chkName);
+
+            if(chkName != ""){
+                recipe[i].setVisibility(View.VISIBLE);
+            }
+        }
+
+        KeepRecipe();
+        if(count == 0){
+            noRecipe.setVisibility(View.VISIBLE);
+        }else{
+            noRecipe.setVisibility(View.INVISIBLE);
+        }
+
 
         FrameLayout recipeFrame = findViewById(R.id.recipeFrame);
         Button recipeDown = findViewById(R.id.button11);
@@ -110,7 +147,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[0].getText());
-                //recipeContentText.setText(recipeContent[0]);
+                recipeContentText.setText(recipeContent[0]);
+                cookingImage.setImageResource(recipeImage[0]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -120,6 +158,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[1].getText());
+                recipeContentText.setText(recipeContent[1]);
+                cookingImage.setImageResource(recipeImage[1]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -129,6 +169,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[2].getText());
+                recipeContentText.setText(recipeContent[2]);
+                cookingImage.setImageResource(recipeImage[2]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -138,6 +180,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[3].getText());
+                recipeContentText.setText(recipeContent[3]);
+                cookingImage.setImageResource(recipeImage[3]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -147,6 +191,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[4].getText());
+                recipeContentText.setText(recipeContent[4]);
+                cookingImage.setImageResource(recipeImage[4]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -156,6 +202,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[5].getText());
+                recipeContentText.setText(recipeContent[5]);
+                cookingImage.setImageResource(recipeImage[5]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -165,6 +213,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[6].getText());
+                recipeContentText.setText(recipeContent[6]);
+                cookingImage.setImageResource(recipeImage[6]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -174,6 +224,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[7].getText());
+                recipeContentText.setText(recipeContent[7]);
+                cookingImage.setImageResource(recipeImage[7]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -183,6 +235,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[8].getText());
+                recipeContentText.setText(recipeContent[8]);
+                cookingImage.setImageResource(recipeImage[8]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -192,6 +246,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[9].getText());
+                recipeContentText.setText(recipeContent[9]);
+                cookingImage.setImageResource(recipeImage[9]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -201,6 +257,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[10].getText());
+                recipeContentText.setText(recipeContent[10]);
+                cookingImage.setImageResource(recipeImage[10]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -210,6 +268,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[11].getText());
+                recipeContentText.setText(recipeContent[11]);
+                cookingImage.setImageResource(recipeImage[11]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -219,6 +279,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[12].getText());
+                recipeContentText.setText(recipeContent[12]);
+                cookingImage.setImageResource(recipeImage[12]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -228,6 +290,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[13].getText());
+                recipeContentText.setText(recipeContent[13]);
+                cookingImage.setImageResource(recipeImage[13]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -237,6 +301,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[14].getText());
+                recipeContentText.setText(recipeContent[14]);
+                cookingImage.setImageResource(recipeImage[14]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -246,6 +312,8 @@ public class MyRecipe extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipeContentName.setText(recipeName[15].getText());
+                recipeContentText.setText(recipeContent[15]);
+                cookingImage.setImageResource(recipeImage[15]);
 
                 recipeFrame.setVisibility(View.VISIBLE);
             }
@@ -253,9 +321,29 @@ public class MyRecipe extends AppCompatActivity {
 
     }
 
-    public void KeepRecipe(String name){
-        recipeName[count].setText(name);
+    public void KeepRecipe(){
+        Intent intent = getIntent();
+        boolean chk = intent.getBooleanExtra("확인",false);
+        String name = intent.getStringExtra("제목");
+        String content = intent.getStringExtra("내용");
+        int img = intent.getIntExtra("이미지",0);
 
-        count += 1;
+        if(chk == true && count < 16){
+            recipeImage[count] = img;
+            editor.putInt("img"+count,img);
+
+            recipeContent[count] = content;
+            editor.putString("content"+count, content);
+
+            recipeName[count].setText(name);
+            editor.putString("name"+count, name);
+
+            recipe[count].setVisibility(View.VISIBLE);
+
+            count += 1;
+            editor.putInt("count", count);
+            editor.apply();
+        }
+        System.out.print(count);
     }
 }
