@@ -7,6 +7,7 @@ import androidx.core.content.res.ResourcesCompat;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -28,8 +29,6 @@ import android.widget.TextView;
 public class recipe extends AppCompatActivity{
 
     boolean imageIndex=true;
-
-
 
     int num=42; //xml때문에 음식 갯수 숫자로 입력
 
@@ -485,6 +484,12 @@ public class recipe extends AppCompatActivity{
         String packageName=getPackageName();
         for(int i=1;i<=num;i++){
             int viewId=getResources().getIdentifier("starButton"+i,"id",packageName);
+
+            String recipeFoodName=recipeFoodNameArr[i];
+
+            Intent intent = new Intent(recipe.this, MyRecipe.class);
+            intent.putExtra("제목", recipeFoodName);
+
             starButton=findViewById(viewId);
             starButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -497,6 +502,9 @@ public class recipe extends AppCompatActivity{
                     }
                     if(System.currentTimeMillis()<=delay){
                         //두번클릭
+                        startActivity(intent);
+                        ((MyRecipe)MyRecipe.context_my_recipe).KeepRecipe();
+
                         starButton=findViewById(viewId);
                         starButton.setImageResource(R.drawable.fill_star);
                     }

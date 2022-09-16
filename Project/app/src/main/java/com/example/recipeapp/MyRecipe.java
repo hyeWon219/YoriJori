@@ -253,9 +253,11 @@ public class MyRecipe extends AppCompatActivity {
 
     }
 
-    public void KeepRecipe(String name){
+    public void KeepRecipe(){
+        Intent intent = getIntent();
+        String name = intent.getStringExtra("제목");
         recipeName[count].setText(name);
-
         count += 1;
+        System.out.print(count);
     }
 }
