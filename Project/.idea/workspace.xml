@@ -13,7 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc5d21b3-071b-4b34-ac4c-2002c1af8e41" name="Changes" comment="즐찾버튼수정">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/recipeapp/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/recipeapp/BuildConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/recipeapp/MyRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/recipeapp/MyRecipe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

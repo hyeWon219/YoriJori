@@ -345,7 +345,8 @@ public class MyRecipe extends AppCompatActivity {
             editor.putInt("count", count);
             editor.apply();
         }
-        System.out.print(count);
+        Toast.makeText(this.getApplicationContext(),name+ "가 즐겨찾기에 추가 됐습니다",
+                Toast.LENGTH_SHORT).show();
     }
 
     /*
