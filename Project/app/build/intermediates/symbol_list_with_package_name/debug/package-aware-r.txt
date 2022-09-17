@@ -1905,7 +1905,6 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id backToHome
-id backToHome2
 id back_layout
 id barrier
 id baseline
@@ -2242,7 +2241,6 @@ id image
 id imageButton
 id imageButton2
 id imageButton3
-id imageButton4
 id imageView
 id imageView10
 id imageView11
@@ -2540,6 +2538,7 @@ id select_dialog_listview
 id selected
 id selection_type
 id settingButton
+id setting_Button
 id shortcut
 id showCustom
 id showHome
