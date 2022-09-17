@@ -14,6 +14,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MyRecipe extends AppCompatActivity {
     public static Context context_my_recipe;
@@ -346,4 +347,36 @@ public class MyRecipe extends AppCompatActivity {
         }
         System.out.print(count);
     }
+
+    /*
+    public void DeleteRecipe(){
+        Intent intent = getIntent();
+        boolean chk; // 삭제 확인 변수 받아오기
+        String name; //이름 받아오기
+
+        if(chk == true){
+            for(int i=0; i <=count; i++){
+                if(recipeName[i].getText() == name){
+                    for(int k = i; k<count;k++){
+                        recipeImage[k] = recipeImage[k+1];
+                        editor.putInt("img"+k,recipeImage[k]);
+
+                        recipeContent[k] = recipeContent[k+1];
+                        editor.putString("content"+k, recipeContent[k]);
+
+                        recipeName[k] = recipeName[k+1];
+                        editor.putString("name"+k, recipeContent[k]);
+                    }
+                    recipe[count].setVisibility(View.INVISIBLE);
+                    count += 1;
+                    editor.putInt("count", count);
+                    editor.apply();
+                    Toast.makeText(this.getApplicationContext(),name+ "가 즐겨찾기에서 제외 됐습니다",
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+    }
+
+     */
 }
