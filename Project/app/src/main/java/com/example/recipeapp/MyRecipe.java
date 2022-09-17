@@ -22,8 +22,8 @@ public class MyRecipe extends AppCompatActivity {
     FrameLayout[] recipe;
     TextView[] recipeName;
     TextView[] recipeKind;
-    String[] recipeContent = new String[16];
-    int[] recipeImage = new int[16];
+    String[] recipeContent = new String[30];
+    int[] recipeImage = new int[30];
 
     int count;
 
@@ -65,10 +65,26 @@ public class MyRecipe extends AppCompatActivity {
         FrameLayout reicpe14 = findViewById(R.id.recipe_14);
         FrameLayout reicpe15 = findViewById(R.id.recipe_15);
         FrameLayout reicpe16 = findViewById(R.id.recipe_16);
+        FrameLayout reicpe17 = findViewById(R.id.recipe_17);
+        FrameLayout reicpe18 = findViewById(R.id.recipe_18);
+        FrameLayout reicpe19 = findViewById(R.id.recipe_19);
+        FrameLayout reicpe20 = findViewById(R.id.recipe_20);
+        FrameLayout reicpe21 = findViewById(R.id.recipe_21);
+        FrameLayout reicpe22 = findViewById(R.id.recipe_22);
+        FrameLayout reicpe23 = findViewById(R.id.recipe_23);
+        FrameLayout reicpe24 = findViewById(R.id.recipe_24);
+        FrameLayout reicpe25 = findViewById(R.id.recipe_25);
+        FrameLayout reicpe26 = findViewById(R.id.recipe_26);
+        FrameLayout reicpe27 = findViewById(R.id.recipe_27);
+        FrameLayout reicpe28 = findViewById(R.id.recipe_28);
+        FrameLayout reicpe29 = findViewById(R.id.recipe_29);
+        FrameLayout reicpe30 = findViewById(R.id.recipe_30);
 
         recipe = new FrameLayout[] { reicpe1, reicpe2, reicpe3, reicpe4, reicpe5, reicpe6,
                 reicpe7, reicpe8, reicpe9, reicpe10, reicpe11, reicpe12,
-                reicpe13, reicpe14, reicpe15, reicpe16 };
+                reicpe13, reicpe14, reicpe15, reicpe16, reicpe17, reicpe18, reicpe19, reicpe20,
+                reicpe21, reicpe22, reicpe23, reicpe24, reicpe25, reicpe26,
+                reicpe27, reicpe28, reicpe29, reicpe30 };
 
         TextView name1 = findViewById(R.id.name1);
         TextView name2 = findViewById(R.id.name2);
@@ -86,9 +102,25 @@ public class MyRecipe extends AppCompatActivity {
         TextView name14 = findViewById(R.id.name14);
         TextView name15 = findViewById(R.id.name15);
         TextView name16 = findViewById(R.id.name16);
+        TextView name17 = findViewById(R.id.name17);
+        TextView name18 = findViewById(R.id.name18);
+        TextView name19 = findViewById(R.id.name19);
+        TextView name20 = findViewById(R.id.name20);
+        TextView name21 = findViewById(R.id.name21);
+        TextView name22 = findViewById(R.id.name22);
+        TextView name23 = findViewById(R.id.name23);
+        TextView name24 = findViewById(R.id.name24);
+        TextView name25 = findViewById(R.id.name25);
+        TextView name26 = findViewById(R.id.name26);
+        TextView name27 = findViewById(R.id.name27);
+        TextView name28 = findViewById(R.id.name28);
+        TextView name29 = findViewById(R.id.name29);
+        TextView name30 = findViewById(R.id.name30);
 
         recipeName = new TextView[] { name1, name2, name3, name4, name5, name6, name7, name8,
-                name9, name10, name11, name12, name13, name14, name15, name16 };
+                name9, name10, name11, name12, name13, name14, name15, name16, name17, name18,
+                name19, name20,  name21, name22, name23, name24, name25, name26, name27, name28,
+                name29, name30};
 
         TextView kind1 = findViewById(R.id.kind1);
         TextView kind2 = findViewById(R.id.kind2);
@@ -106,9 +138,25 @@ public class MyRecipe extends AppCompatActivity {
         TextView kind14 = findViewById(R.id.kind14);
         TextView kind15 = findViewById(R.id.kind15);
         TextView kind16 = findViewById(R.id.kind16);
+        TextView kind17 = findViewById(R.id.kind17);
+        TextView kind18 = findViewById(R.id.kind18);
+        TextView kind19 = findViewById(R.id.kind19);
+        TextView kind20 = findViewById(R.id.kind20);
+        TextView kind21 = findViewById(R.id.kind21);
+        TextView kind22 = findViewById(R.id.kind22);
+        TextView kind23 = findViewById(R.id.kind23);
+        TextView kind24 = findViewById(R.id.kind24);
+        TextView kind25 = findViewById(R.id.kind25);
+        TextView kind26 = findViewById(R.id.kind26);
+        TextView kind27 = findViewById(R.id.kind27);
+        TextView kind28 = findViewById(R.id.kind28);
+        TextView kind29 = findViewById(R.id.kind29);
+        TextView kind30 = findViewById(R.id.kind30);
 
         recipeKind = new TextView[] { kind1, kind2, kind3, kind4, kind5, kind6, kind7, kind8,
-                kind9, kind10, kind11, kind12, kind13, kind14, kind15, kind16 };
+                kind9, kind10, kind11, kind12, kind13, kind14, kind15, kind16, kind17, kind18,
+                kind19, kind20, kind21, kind22, kind23, kind24, kind25, kind26, kind27, kind28,
+                kind29, kind30 };
 
         for(int i=0; i <= count; i++){
             chkImg = pref.getInt("img"+i , 0);
@@ -124,7 +172,13 @@ public class MyRecipe extends AppCompatActivity {
             }
         }
 
-        KeepRecipe();
+        if(count<30){
+            KeepRecipe();
+        } else{
+            Toast.makeText(this.getApplicationContext(),"즐겨찾기가 가득 찼습니다.",
+                    Toast.LENGTH_SHORT).show();
+        }
+
         if(count == 0){
             noRecipe.setVisibility(View.VISIBLE);
         }else{

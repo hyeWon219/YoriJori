@@ -103,7 +103,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -153,7 +154,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -209,7 +211,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -259,7 +262,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -315,7 +319,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -365,7 +370,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -421,7 +427,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -471,7 +478,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -527,7 +535,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -577,7 +586,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -633,7 +643,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -683,7 +694,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -739,7 +751,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -789,7 +802,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -845,7 +859,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -895,7 +910,8 @@
                         android:layout_width="240dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:visibility="invisible">
+                        android:visibility="invisible"
+                        tools:visibility="visible">
 
                         <View
                             android:id="@+id/view29"
@@ -938,6 +954,762 @@
 
                 <View
                     android:id="@+id/view32"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_17"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_18"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_19"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_20"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_21"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_22"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_23"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_24"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_25"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_26"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_27"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_28"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/recipe_29"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:id="@+id/view31"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:id="@+id/recipe_30"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        tools:visibility="visible">
+
+                        <View
+                            android:id="@+id/view29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="5dp"
+                            android:translationY="30dp"
+                            app:srcCompat="@drawable/smallspoon" />
+
+                        <TextView
+                            android:id="@+id/name30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="요리 이름"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:translationX="50dp"
+                            android:translationY="15dp" />
+
+                        <TextView
+                            android:id="@+id/kind30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="분류 항목"
+                            android:textColor="@color/white"
+                            android:translationX="50dp"
+                            android:translationY="45dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view11"
                     android:layout_width="match_parent"
                     android:layout_height="10dp" />
 
