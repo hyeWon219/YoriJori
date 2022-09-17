@@ -115,11 +115,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button jButton=findViewById(R.id.button_korean1);
-        jButton.setOnClickListener(new View.OnClickListener(){
+        //Button jButton=findViewById();
+        /*jButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){ showJpopup();}
-        });
+        });*/
 
         //cart 페이지 이동을 위한 버튼 변수와 리스너 추가
         Button button_cart = findViewById(R.id.cart_Button);
