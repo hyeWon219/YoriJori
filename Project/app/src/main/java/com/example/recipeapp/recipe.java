@@ -5,9 +5,11 @@ import static com.example.recipeapp.MyRecipe.context_my_recipe;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -45,6 +47,8 @@ public class recipe extends AppCompatActivity{
 
     ImageView detailRecipeImage;
 
+    SharedPreferences pref;
+    SharedPreferences.Editor editor; //저장소
 
     ImageView foodImage;
 
@@ -669,6 +673,9 @@ public class recipe extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_recipe);
 
+        pref = getPreferences(Activity.MODE_PRIVATE);
+        editor=pref.edit(); //저장소 초기화
+
         detailRecipeFrameLayout = findViewById(R.id.detailRecipeFrameLayout);
         detailRecipeName=findViewById(R.id.detailRecipeName);
         detailRecipeHowToCook=findViewById(R.id.detailRecipeHowToCook);
@@ -793,26 +800,53 @@ public class recipe extends AppCompatActivity{
             String recipeHowToCook=detailRecipeHowToCookArr[i];
 
             Intent intent = new Intent(recipe.this, MyRecipe.class);
-            intent.putExtra("제목", recipeFoodName);
-            intent.putExtra("내용",recipeHowToCook);
-            intent.putExtra("이미지",imgId);
-            intent.putExtra("확인",true);
 
             starButton=findViewById(viewId);
+
+            boolean starchk;
+            boolean fillstarChk;
+            boolean chkStar = pref.getBoolean("즐겨찾기확인"+i, false);
+            if(chkStar == false){
+                starButton.setImageResource(R.drawable.star);
+                starchk = true;
+                fillstarChk = false;
+            }else{
+                starButton.setImageResource(R.drawable.fill_star);
+                starchk = false;
+                fillstarChk = true;
+            }
+
+            int num = i;
+
             starButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(System.currentTimeMillis()>delay){
-                        delay=System.currentTimeMillis()+200;
-                        starButton=findViewById(viewId);
+                    if(starchk == false && fillstarChk == true){
+                        //delay=System.currentTimeMillis()+200;
                         starButton.setImageResource(R.drawable.star);
-                        return;
+
+                        editor.putBoolean("즐겨찾기확인"+num, false);
+                        editor.apply();
+
+                        intent.putExtra("제목", recipeFoodName);
+                        intent.putExtra("내용",recipeHowToCook);
+                        intent.putExtra("이미지",imgId);
+                        intent.putExtra("확인",false);
+                        intent.putExtra("삭제확인",true);
+
+                        startActivity(intent);
+                        //return;
                     }
-                    if(System.currentTimeMillis()<=delay){
+                    if(starchk == true && fillstarChk == false){
                         //두번클릭
-                        starButton=findViewById(viewId);
                         starButton.setImageResource(R.drawable.fill_star);
 
+                        editor.putBoolean("즐겨찾기확인"+num, true);
+                        editor.apply();
+
+                        intent.putExtra("제목", recipeFoodName);
+                        intent.putExtra("삭제확인",false);
+                        intent.putExtra("확인",true);
                         startActivity(intent);
                     }
                 }

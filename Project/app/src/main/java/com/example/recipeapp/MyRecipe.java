@@ -30,7 +30,9 @@ public class MyRecipe extends AppCompatActivity {
     int chkImg;
     String chkContent;
     String chkName;
+
     //String chkKind;
+    //Intent intentBack = new Intent(MyRecipe.this, recipe.class);
 
     SharedPreferences pref;
     SharedPreferences.Editor editor;
@@ -40,6 +42,9 @@ public class MyRecipe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_recipe);
         context_my_recipe = this;
+
+        Intent intentOut = getIntent();
+        //String chkdeletename = intentOut.getStringExtra("제목");
 
         pref = getPreferences(Activity.MODE_PRIVATE);
         editor=pref.edit();
@@ -177,10 +182,14 @@ public class MyRecipe extends AppCompatActivity {
 
         if(count<30){
             KeepRecipe();
+            //noRecipe.setVisibility(View.INVISIBLE);
         } else{
             Toast.makeText(this.getApplicationContext(),"즐겨찾기가 가득 찼습니다.",
                     Toast.LENGTH_SHORT).show();
         }
+
+        DeleteRecipe();
+
 
         if(count == 0){
             noRecipe.setVisibility(View.VISIBLE);
@@ -377,16 +386,169 @@ public class MyRecipe extends AppCompatActivity {
             }
         });
 
+        reicpe17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[16].getText());
+                recipeContentText.setText(recipeContent[16]);
+                cookingImage.setImageResource(recipeImage[16]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[17].getText());
+                recipeContentText.setText(recipeContent[17]);
+                cookingImage.setImageResource(recipeImage[17]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+        reicpe19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[18].getText());
+                recipeContentText.setText(recipeContent[18]);
+                cookingImage.setImageResource(recipeImage[18]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[19].getText());
+                recipeContentText.setText(recipeContent[19]);
+                cookingImage.setImageResource(recipeImage[19]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[20].getText());
+                recipeContentText.setText(recipeContent[20]);
+                cookingImage.setImageResource(recipeImage[20]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[21].getText());
+                recipeContentText.setText(recipeContent[21]);
+                cookingImage.setImageResource(recipeImage[21]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[22].getText());
+                recipeContentText.setText(recipeContent[22]);
+                cookingImage.setImageResource(recipeImage[22]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe24.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[23].getText());
+                recipeContentText.setText(recipeContent[23]);
+                cookingImage.setImageResource(recipeImage[23]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe25.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[24].getText());
+                recipeContentText.setText(recipeContent[24]);
+                cookingImage.setImageResource(recipeImage[24]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe26.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[25].getText());
+                recipeContentText.setText(recipeContent[25]);
+                cookingImage.setImageResource(recipeImage[25]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe27.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[26].getText());
+                recipeContentText.setText(recipeContent[26]);
+                cookingImage.setImageResource(recipeImage[26]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[27].getText());
+                recipeContentText.setText(recipeContent[27]);
+                cookingImage.setImageResource(recipeImage[27]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[28].getText());
+                recipeContentText.setText(recipeContent[28]);
+                cookingImage.setImageResource(recipeImage[28]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reicpe30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeContentName.setText(recipeName[29].getText());
+                recipeContentText.setText(recipeContent[29]);
+                cookingImage.setImageResource(recipeImage[29]);
+
+                recipeFrame.setVisibility(View.VISIBLE);
+            }
+        });
+
     }
 
     public void KeepRecipe(){
         Intent intent = getIntent();
-        boolean chk = intent.getBooleanExtra("확인",false);
         String name = intent.getStringExtra("제목");
         String content = intent.getStringExtra("내용");
         int img = intent.getIntExtra("이미지",0);
+        boolean chkPlus = intent.getBooleanExtra("확인",false);
 
-        if(chk == true && count < 16){
+        if(chkPlus == true && count < 30){
             recipeImage[count] = img;
             editor.putInt("img"+count,img);
 
@@ -410,13 +572,12 @@ public class MyRecipe extends AppCompatActivity {
 
     }
 
-    /*
     public void DeleteRecipe(){
         Intent intent = getIntent();
-        boolean chk; // 삭제 확인 변수 받아오기
-        String name; //이름 받아오기
+        String name = intent.getStringExtra("제목"); //이름 받아오기
+        boolean chkClear = intent.getBooleanExtra("삭제확인",false);
 
-        if(chk == true){
+        if(chkClear == true){
             for(int i=0; i <=count; i++){
                 if(recipeName[i].getText() == name){
                     for(int k = i; k<count;k++){
@@ -429,19 +590,23 @@ public class MyRecipe extends AppCompatActivity {
                         recipeName[k] = recipeName[k+1];
                         editor.putString("name"+k, recipeContent[k]);
                     }
-                    break();
+                    break;
                 }
             }
             recipe[count].setVisibility(View.INVISIBLE);
-                    count += 1;
-                    editor.putInt("count", count);
-                    editor.apply();
-                    Toast.makeText(this.getApplicationContext(),name+ "가 즐겨찾기에서 제외 됐습니다",
-                            Toast.LENGTH_SHORT).show();
+            count -= 1;
+            editor.putInt("count", count);
+            editor.apply();
+
+            Toast.makeText(this.getApplicationContext(),name+ "가 즐겨찾기에서 제외 됐습니다",
+                Toast.LENGTH_SHORT).show();
         }
+
     }
 
-     */
+
+
+
 /*
     String koreanFood [] = {"불족면", "백종원족발덮밥", "오리엔탈 족발샐러드", "족발 김밥", "족발볶음", "매운 족발",
                             "떡볶이에그인헬", "로제 라면", "떡볶이 볶음밥", "매콤 닭떡조림", "떡볶이 피자", "떡볶이 짜파게티",
