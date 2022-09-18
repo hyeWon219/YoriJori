@@ -21,7 +21,6 @@ public class MyRecipe extends AppCompatActivity {
 
     FrameLayout[] recipe;
     TextView[] recipeName;
-    TextView[] recipeKind;
     String[] recipeContent = new String[30];
     int[] recipeImage = new int[30];
 
@@ -31,9 +30,6 @@ public class MyRecipe extends AppCompatActivity {
     String chkContent;
     String chkName;
 
-    //String chkKind;
-    //Intent intentBack = new Intent(MyRecipe.this, recipe.class);
-
     SharedPreferences pref;
     SharedPreferences.Editor editor;
 
@@ -42,9 +38,6 @@ public class MyRecipe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_recipe);
         context_my_recipe = this;
-
-        Intent intentOut = getIntent();
-        //String chkdeletename = intentOut.getStringExtra("제목");
 
         pref = getPreferences(Activity.MODE_PRIVATE);
         editor=pref.edit();
@@ -128,52 +121,14 @@ public class MyRecipe extends AppCompatActivity {
                 name19, name20,  name21, name22, name23, name24, name25, name26, name27, name28,
                 name29, name30};
 
-        TextView kind1 = findViewById(R.id.kind1);
-        TextView kind2 = findViewById(R.id.kind2);
-        TextView kind3 = findViewById(R.id.kind3);
-        TextView kind4 = findViewById(R.id.kind4);
-        TextView kind5 = findViewById(R.id.kind5);
-        TextView kind6 = findViewById(R.id.kind6);
-        TextView kind7 = findViewById(R.id.kind7);
-        TextView kind8 = findViewById(R.id.kind8);
-        TextView kind9 = findViewById(R.id.kind9);
-        TextView kind10 = findViewById(R.id.kind10);
-        TextView kind11 = findViewById(R.id.kind11);
-        TextView kind12 = findViewById(R.id.kind12);
-        TextView kind13 = findViewById(R.id.kind13);
-        TextView kind14 = findViewById(R.id.kind14);
-        TextView kind15 = findViewById(R.id.kind15);
-        TextView kind16 = findViewById(R.id.kind16);
-        TextView kind17 = findViewById(R.id.kind17);
-        TextView kind18 = findViewById(R.id.kind18);
-        TextView kind19 = findViewById(R.id.kind19);
-        TextView kind20 = findViewById(R.id.kind20);
-        TextView kind21 = findViewById(R.id.kind21);
-        TextView kind22 = findViewById(R.id.kind22);
-        TextView kind23 = findViewById(R.id.kind23);
-        TextView kind24 = findViewById(R.id.kind24);
-        TextView kind25 = findViewById(R.id.kind25);
-        TextView kind26 = findViewById(R.id.kind26);
-        TextView kind27 = findViewById(R.id.kind27);
-        TextView kind28 = findViewById(R.id.kind28);
-        TextView kind29 = findViewById(R.id.kind29);
-        TextView kind30 = findViewById(R.id.kind30);
-
-        recipeKind = new TextView[] { kind1, kind2, kind3, kind4, kind5, kind6, kind7, kind8,
-                kind9, kind10, kind11, kind12, kind13, kind14, kind15, kind16, kind17, kind18,
-                kind19, kind20, kind21, kind22, kind23, kind24, kind25, kind26, kind27, kind28,
-                kind29, kind30 };
-
         for(int i=0; i < count; i++){
             chkImg = pref.getInt("img"+i , 0);
             chkContent = pref.getString("content"+i, "내용");
             chkName = pref.getString("name"+i, "요리 이름");
-            //chkKind = pref.getString("kind"+i,"분류");
 
             recipeImage[i] = chkImg;
             recipeContent[i] = chkContent;
             recipeName[i].setText(chkName);
-            //recipeKind[i].setText(chkKind);
 
             if(chkName != ""){
                 recipe[i].setVisibility(View.VISIBLE);
@@ -182,7 +137,6 @@ public class MyRecipe extends AppCompatActivity {
 
         if(count<30){
             KeepRecipe();
-            //noRecipe.setVisibility(View.INVISIBLE);
         } else{
             Toast.makeText(this.getApplicationContext(),"즐겨찾기가 가득 찼습니다.",
                     Toast.LENGTH_SHORT).show();
@@ -558,8 +512,6 @@ public class MyRecipe extends AppCompatActivity {
             recipeName[count].setText(name);
             editor.putString("name"+count, name);
 
-            //setKind(name);
-
             recipe[count].setVisibility(View.VISIBLE);
 
             count += 1;
@@ -576,10 +528,13 @@ public class MyRecipe extends AppCompatActivity {
         Intent intent = getIntent();
         String name = intent.getStringExtra("삭제제목"); //이름 받아오기
         boolean chkClear = intent.getBooleanExtra("삭제확인",false);
+        String checking;
 
         if(chkClear == true){
             for(int i=0; i <=count; i++){
-                if(recipeName[i].getText() == name){
+                checking = (String) recipeName[i].getText();
+                if(name.equals(checking)){
+
                     int num = i;
                     for(int k = num; k<count;k++) {
                         recipeImage[k] = recipeImage[k + 1];
@@ -588,70 +543,23 @@ public class MyRecipe extends AppCompatActivity {
                         recipeContent[k] = recipeContent[k + 1];
                         editor.putString("content" + k, recipeContent[k]);
 
-                        recipeName[k] = recipeName[k + 1];
-                        editor.putString("name" + k, recipeContent[k]);
+                        recipeName[k].setText(recipeName[k + 1].getText());
+                        editor.putString("name" + k, (String)recipeName[k].getText());
                     }
+
+                    recipe[count-1].setVisibility(View.INVISIBLE);
+                    count -= 1;
+                    editor.putInt("count", count);
+                    editor.apply();
+
+                    Toast.makeText(this.getApplicationContext(),name+ "(이)가 즐겨찾기에서 제외 됐습니다",
+                            Toast.LENGTH_SHORT).show();
+
+                    break;
                 }
             }
-            recipe[count].setVisibility(View.INVISIBLE);
-            count -= 1;
-            editor.putInt("count", count);
-            editor.apply();
-
-            Toast.makeText(this.getApplicationContext(),name+ "가 즐겨찾기에서 제외 됐습니다",
-                Toast.LENGTH_SHORT).show();
         }
 
     }
 
-
-
-
-/*
-    String koreanFood [] = {"불족면", "백종원족발덮밥", "오리엔탈 족발샐러드", "족발 김밥", "족발볶음", "매운 족발",
-                            "떡볶이에그인헬", "로제 라면", "떡볶이 볶음밥", "매콤 닭떡조림", "떡볶이 피자", "떡볶이 짜파게티",
-                            "찜닭계란만두", "찜닭 볶음밥", "찜닭마요", "찜닭 떡볶이",
-                            "곱창파스타", "곱창볶음밥", "치아곱타",
-                            "감자탕 라면", "우거지 해장국", "감자탕 볶음밥",
-                            "순대 볶음", "순대국", "순대튀김", "떠먹는 치즈 순대"};
-    String chinaFood[] = {"짜장 덮밥", "볶음 짜장", "짜장면 부침개", "짜장 파스타", "중국식 볶음밥", "계란짜장밥",
-                            "탕수육 잡채덮밥", "깐풍기", "탕수육 강정", "탕수육 샐러드", "김피탕", "탕수육 찌개",
-                            "짬뽕밥", "만두국", "짬뽕 볶음밥", "짬뽕 라면", "토마토짬뽕파스타", "짬뽕 두부 조림",
-                            "마라 라면", "마라 볶음밥"};
-    String westernFood[] = {"치킨마요 덮밥", "카레 치즈 라면", "양념 치킨 볶음밥", "치킨전", "케이준 크루통샐러드", "치킨 스낵랩",
-                            "피자 말아또", "피자그라탕", "누드피자전", "피자라볶이", "떠먹는 피자", "피자 프리타타",
-                            "돈까스김치나베", "가츠동 덮밥", "카츠샌드", "돈까스덮밥", "돈까스 라면", "돈까스 카레 덮밥",
-                            "오지치즈후라이", "고로케", "감자튀김치즈전", "떠먹는 감자 피자", "버터갈릭감자튀김", "매콤감자튀김"};
-    String snackFood[] = {"메로나떡", "아포가토", "아이스크림 샌드위치", "백종원표 투게더 빵 푸딩", "아이스크림 튀김", "아이스크림 플로트",
-                            "매쉬드 포테이토", "오레오 디저트 컵", "오레오 티라미수", "옥수수 머핀", "오감자 후라이", "깐풍소스 새우깡",
-                            "그릭모모", "그릭단호박", "요거트 베이글", "요거트 에그마요샌드위치"};
-
-    public void setKind(String name){
-        for(int i = 0; i<=koreanFood.length; i++){
-            if(name == koreanFood[i]){
-                recipeKind[count].setText("한식");
-                editor.putString("kind"+count, "한식");
-            }
-        }
-        for(int i = 0; i<=chinaFood.length; i++){
-            if(name == chinaFood[i]){
-                recipeKind[count].setText("중식");
-                editor.putString("kind"+count, "중식");
-            }
-        }
-        for(int i = 0; i<=westernFood.length; i++){
-            if(name == westernFood[i]){
-                recipeKind[count].setText("양식");
-                editor.putString("kind"+count, "양식");
-            }
-        }
-        for(int i = 0; i<=snackFood.length; i++){
-            if(name == snackFood[i]){
-                recipeKind[count].setText("간식류");
-                editor.putString("kind"+count, "간식류");
-            }
-        }
-    }
-
- */
 }

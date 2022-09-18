@@ -20,36 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <Button
-        android:id="@+id/setting_Button"
-        android:layout_width="35dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:background="@drawable/edit"
-        android:text=" "
-        app:backgroundTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.983"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999"
-        app:srcCompat="@drawable/list" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="397dp"
@@ -70,12 +40,10 @@
                 android:id="@+id/textView7"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <SearchView
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="먹고 싶은 레시피는 여기로~!"
+                android:gravity="right"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -132,15 +100,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -182,15 +141,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -240,15 +190,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -290,15 +231,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -348,15 +280,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -398,15 +321,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -456,15 +370,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -506,15 +411,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -564,15 +460,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -614,15 +501,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -672,15 +550,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -722,15 +591,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -780,15 +640,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -830,15 +681,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind14"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -888,15 +730,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind15"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -938,15 +771,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind16"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -996,15 +820,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -1046,15 +861,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind18"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -1104,15 +910,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind19"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -1154,15 +951,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind20"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -1212,15 +1000,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -1262,15 +1041,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind22"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -1320,15 +1090,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind23"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -1370,15 +1131,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind24"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -1428,15 +1180,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind25"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -1478,15 +1221,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind26"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -1536,15 +1270,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind27"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -1586,15 +1311,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
@@ -1644,15 +1360,6 @@
                             android:translationX="50dp"
                             android:translationY="15dp" />
 
-                        <TextView
-                            android:id="@+id/kind29"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
-
                     </FrameLayout>
 
                     <View
@@ -1694,15 +1401,6 @@
                             android:textStyle="bold"
                             android:translationX="50dp"
                             android:translationY="15dp" />
-
-                        <TextView
-                            android:id="@+id/kind30"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="분류 항목"
-                            android:textColor="@color/white"
-                            android:translationX="50dp"
-                            android:translationY="45dp" />
 
                     </FrameLayout>
 
