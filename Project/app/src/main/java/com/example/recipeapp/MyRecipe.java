@@ -574,23 +574,23 @@ public class MyRecipe extends AppCompatActivity {
 
     public void DeleteRecipe(){
         Intent intent = getIntent();
-        String name = intent.getStringExtra("제목"); //이름 받아오기
+        String name = intent.getStringExtra("삭제제목"); //이름 받아오기
         boolean chkClear = intent.getBooleanExtra("삭제확인",false);
 
         if(chkClear == true){
             for(int i=0; i <=count; i++){
                 if(recipeName[i].getText() == name){
-                    for(int k = i; k<count;k++){
-                        recipeImage[k] = recipeImage[k+1];
-                        editor.putInt("img"+k,recipeImage[k]);
+                    int num = i;
+                    for(int k = num; k<count;k++) {
+                        recipeImage[k] = recipeImage[k + 1];
+                        editor.putInt("img" + k, recipeImage[k]);
 
-                        recipeContent[k] = recipeContent[k+1];
-                        editor.putString("content"+k, recipeContent[k]);
+                        recipeContent[k] = recipeContent[k + 1];
+                        editor.putString("content" + k, recipeContent[k]);
 
-                        recipeName[k] = recipeName[k+1];
-                        editor.putString("name"+k, recipeContent[k]);
+                        recipeName[k] = recipeName[k + 1];
+                        editor.putString("name" + k, recipeContent[k]);
                     }
-                    break;
                 }
             }
             recipe[count].setVisibility(View.INVISIBLE);

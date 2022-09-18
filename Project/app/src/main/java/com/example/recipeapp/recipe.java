@@ -818,6 +818,10 @@ public class recipe extends AppCompatActivity{
             }
 
             int num = i;
+            intent.putExtra("제목", recipeFoodName);
+            intent.putExtra("내용",recipeHowToCook);
+            intent.putExtra("이미지",imgId);
+            intent.putExtra("삭제제목", recipeFoodName);
 
             starButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -829,9 +833,6 @@ public class recipe extends AppCompatActivity{
                         editor.putBoolean("즐겨찾기확인"+num, false);
                         editor.apply();
 
-                        intent.putExtra("제목", recipeFoodName);
-                        intent.putExtra("내용",recipeHowToCook);
-                        intent.putExtra("이미지",imgId);
                         intent.putExtra("확인",false);
                         intent.putExtra("삭제확인",true);
 
@@ -842,10 +843,10 @@ public class recipe extends AppCompatActivity{
                         //두번클릭
                         starButton.setImageResource(R.drawable.fill_star);
 
+
                         editor.putBoolean("즐겨찾기확인"+num, true);
                         editor.apply();
 
-                        intent.putExtra("제목", recipeFoodName);
                         intent.putExtra("삭제확인",false);
                         intent.putExtra("확인",true);
                         startActivity(intent);
