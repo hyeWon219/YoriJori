@@ -795,6 +795,7 @@ public class recipe extends AppCompatActivity{
         for(int i=1;i<=num;i++){
             int viewId=getResources().getIdentifier("starButton"+i,"id",packageName);
             int imgId=getResources().getIdentifier("img_"+i,"drawable",packageName);
+            int starId=getResources().getIdentifier("star","drawable",packageName);
 
             String recipeFoodName=recipeFoodNameArr[i];
             String recipeHowToCook=detailRecipeHowToCookArr[i];
