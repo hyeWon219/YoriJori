@@ -701,7 +701,7 @@ public class recipe extends AppCompatActivity{
             }
         });
 
-        //셋팅버튼
+        /*
         settingDialog=new Dialog(recipe.this);
         settingDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         settingDialog.setContentView(R.layout.setting_custompopup);
@@ -713,12 +713,12 @@ public class recipe extends AppCompatActivity{
             public void onClick(View view) {
                 showSettingDialog();
             }
-        });
+        });*/
     }
 
-    public void showSettingDialog() {
+    /*public void showSettingDialog() {
         settingDialog.show();
-    }
+    }*/
 //레시피버튼 함수
     private void initFoodImage(){
         String packageName=getPackageName();
