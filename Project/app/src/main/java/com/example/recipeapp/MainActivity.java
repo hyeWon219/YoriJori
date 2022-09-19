@@ -34,7 +34,6 @@ import me.relex.circleindicator.CircleIndicator3;
 public class MainActivity extends AppCompatActivity {
     //추후에 메인에 있는 변수 접근을 위해 선언한 변수
     //japanese는 간식류 페이지
-    public static Context context_main;
     Dialog settingDialog;
     Dialog custompopup_k;
     Dialog custompopup_c;
