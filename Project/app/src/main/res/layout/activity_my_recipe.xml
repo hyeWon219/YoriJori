@@ -98,7 +98,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -140,7 +140,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -188,7 +188,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -230,7 +230,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -278,7 +278,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -320,7 +320,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -368,7 +368,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -410,7 +410,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -458,7 +458,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -500,7 +500,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -548,7 +548,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -590,7 +590,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -638,7 +638,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -680,7 +680,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -728,7 +728,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -770,7 +770,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -818,7 +818,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -860,7 +860,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -908,7 +908,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -950,7 +950,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -998,7 +998,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1040,7 +1040,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1088,7 +1088,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1130,7 +1130,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1178,7 +1178,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1220,7 +1220,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1268,7 +1268,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1310,7 +1310,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1358,7 +1358,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
@@ -1400,7 +1400,7 @@
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:translationX="50dp"
-                            android:translationY="15dp" />
+                            android:translationY="35dp" />
 
                     </FrameLayout>
 
