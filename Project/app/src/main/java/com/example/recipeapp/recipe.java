@@ -673,6 +673,8 @@ public class recipe extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_recipe);
 
+
+
         pref = getPreferences(Activity.MODE_PRIVATE);
         editor=pref.edit(); //저장소 초기화
 
@@ -792,6 +794,7 @@ public class recipe extends AppCompatActivity{
 
     private void initStarButton(){
         String packageName=getPackageName();
+        MyRecipe.setLayout=true;
         for(int i=1;i<=num;i++){
             int viewId=getResources().getIdentifier("starButton"+i,"id",packageName);
             int imgId=getResources().getIdentifier("img_"+i,"drawable",packageName);
@@ -898,6 +901,12 @@ public class recipe extends AppCompatActivity{
     public void recipeOpen_starButton(){
         initStarButton();
 
+    }
+//추가
+    @Override
+    public void onBackPressed() {
+        MyRecipe.setLayout=false;
+        super.onBackPressed();
     }
 }
 

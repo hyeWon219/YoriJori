@@ -33,6 +33,9 @@ public class MyRecipe extends AppCompatActivity {
     SharedPreferences pref;
     SharedPreferences.Editor editor;
 
+    //추가
+    static boolean setLayout=false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -561,5 +564,17 @@ public class MyRecipe extends AppCompatActivity {
         }
 
     }
+//추가
+    @Override
+    public void onBackPressed() {
+        if(setLayout!=true){
+            super.onBackPressed();
+        }else{
+            Intent intent=new Intent(MyRecipe.this, recipe.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            finish();;
+        }
 
+    }
 }
