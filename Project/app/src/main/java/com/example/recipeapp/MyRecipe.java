@@ -25,10 +25,8 @@ public class MyRecipe extends AppCompatActivity {
     int[] recipeImage = new int[30];
 
     //변수 가져옴 + 텍스트 설정
-    public static TextView recipeText;
-    public static MainActivity mainact = new MainActivity();
-    private static boolean checkbool = mainact.checking;
-    private static boolean checkbool2 = mainact.checking2;
+    public TextView recipeText;
+    private boolean checkbool;
 
     int count;
 
@@ -50,14 +48,20 @@ public class MyRecipe extends AppCompatActivity {
         context_my_recipe = this;
 
         //텍스트 변경
+        checkbool = ((MainActivity)MainActivity.context_main).checking;
         recipeText = findViewById(R.id.cart_name);
         if(checkbool == true){
             recipeText.setText("나의 레시피");
+        } else{
+            recipeText.setText("My Recipe");
         }
 
+        /*
         if(checkbool2 == true){
             recipeText.setText("My Recipe");
         }
+
+         */
 
         pref = getPreferences(Activity.MODE_PRIVATE);
         editor=pref.edit();

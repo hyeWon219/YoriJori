@@ -56,6 +56,10 @@ public class recipe extends AppCompatActivity{
 
     Dialog settingDialog;
 
+    //언어 변경 변수
+    public TextView recipeText;
+    private boolean checkbool;
+
     //음식이름배열
     String recipeFoodNameArr[]= {" ",
             "불족면",
@@ -673,7 +677,14 @@ public class recipe extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_recipe);
 
-
+        //언어변경
+        checkbool = ((MainActivity)MainActivity.context_main).checking;
+        recipeText = findViewById(R.id.appTitleText);
+        if(checkbool == true){
+            recipeText.setText("레시피북");
+        } else{
+            recipeText.setText("Recipe Book");
+        }
 
         pref = getPreferences(Activity.MODE_PRIVATE);
         editor=pref.edit(); //저장소 초기화

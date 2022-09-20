@@ -33,6 +33,7 @@ import me.relex.circleindicator.CircleIndicator3;
 
 public class MainActivity extends AppCompatActivity {
     //추후에 메인에 있는 변수 접근을 위해 선언한 변수
+    public static Context context_main;
     //japanese는 간식류 페이지
     Dialog settingDialog;
     Dialog custompopup_k;
@@ -72,13 +73,14 @@ public class MainActivity extends AppCompatActivity {
     TextView main_detailRecipeHowToCook;
 
     //텍스트 변경용 변수
-    public static boolean checking=false;
-    public static boolean checking2=true;
+    public boolean checking=false;
+    //public static boolean checking2=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        context_main = this;
 
         //커스텀 팝업 기능 구현
         settingDialog=new Dialog(MainActivity.this);
@@ -398,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
                     setting.setText("설정");
                     //변수 변경
                     checking = true;
-                    checking2 = false;
+                    //checking2 = false;
                 } else {
                     title.setText("Recipe App");
                     rbook.setText("Recipe Book");
@@ -410,7 +412,7 @@ public class MainActivity extends AppCompatActivity {
                     setting.setText("Setting");
                     //변수 변경
                     checking = false;
-                    checking2 = true;
+                    //checking2 = true;
                 }
             }
         });

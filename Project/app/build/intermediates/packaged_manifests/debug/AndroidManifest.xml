@@ -16,6 +16,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.RecipeApp" >
         <activity
             android:name="com.example.recipeapp.MyRecipe"
@@ -23,7 +24,6 @@
         <activity
             android:name="com.example.recipeapp.recipe"
             android:exported="false" />
-        <activity android:name="com.example.recipeapp.Cart" />
         <activity android:name="com.example.recipeapp.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
