@@ -2854,7 +2854,6 @@ id titleDividerNoCustom
 id titleLayout
 id title_template
 id toggle
-id toggleButton
 id top
 id topPanel
 id touch_outside

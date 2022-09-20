@@ -24,6 +24,12 @@ public class MyRecipe extends AppCompatActivity {
     String[] recipeContent = new String[30];
     int[] recipeImage = new int[30];
 
+    //변수 가져옴 + 텍스트 설정
+    public static TextView recipeText;
+    public static MainActivity mainact = new MainActivity();
+    private static boolean checkbool = mainact.checking;
+    private static boolean checkbool2 = mainact.checking2;
+
     int count;
 
     int chkImg;
@@ -40,7 +46,18 @@ public class MyRecipe extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_recipe);
+
         context_my_recipe = this;
+
+        //텍스트 변경
+        recipeText = findViewById(R.id.cart_name);
+        if(checkbool == true){
+            recipeText.setText("나의 레시피");
+        }
+
+        if(checkbool2 == true){
+            recipeText.setText("My Recipe");
+        }
 
         pref = getPreferences(Activity.MODE_PRIVATE);
         editor=pref.edit();
