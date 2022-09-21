@@ -13,6 +13,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -678,12 +679,16 @@ public class recipe extends AppCompatActivity{
         setContentView(R.layout.layout_recipe);
 
         //언어변경
+        Typeface ralewayBold = ResourcesCompat.getFont(this, R.font.ralewayextrabold);
+        Typeface nanu = ResourcesCompat.getFont(this, R.font.nanumbarungothicyethangul);
         checkbool = ((MainActivity)MainActivity.context_main).checking;
         recipeText = findViewById(R.id.appTitleText);
         if(checkbool == true){
-            recipeText.setText("레시피북");
+            recipeText.setText(" 레시피북");
+            recipeText.setTypeface(nanu);
         } else{
-            recipeText.setText("Recipe Book");
+            recipeText.setText(" Recipe Book");
+            recipeText.setTypeface(ralewayBold);
         }
 
         pref = getPreferences(Activity.MODE_PRIVATE);

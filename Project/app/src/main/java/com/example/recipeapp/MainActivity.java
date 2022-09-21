@@ -2,6 +2,7 @@ package com.example.recipeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -9,6 +10,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -74,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
     //텍스트 변경용 변수
     public boolean checking=false;
-    //public static boolean checking2=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -385,13 +386,17 @@ public class MainActivity extends AppCompatActivity {
         TextView infotext = infoDialog.findViewById(R.id.textView5);
         TextView setting = settingDialog.findViewById(R.id.textView5);
 
+        Typeface raleway = ResourcesCompat.getFont(this, R.font.ralewaymedium);
+        Typeface ralewayBold = ResourcesCompat.getFont(this, R.font.ralewayextrabold);
+        Typeface nanu = ResourcesCompat.getFont(this, R.font.nanumbarungothicyethangul);
+
         Switch transSwitch = settingDialog.findViewById(R.id.switch2);
         transSwitch.setOnCheckedChangeListener(new Switch.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     title.setText("요리조리");
-                    rbook.setText("   레시피북");
+                    rbook.setText("     레시피북");
                     cart.setText(" 내 레시피");
                     info.setText("정보");
                     recommend.setText("오늘의 추천요리");
@@ -400,9 +405,18 @@ public class MainActivity extends AppCompatActivity {
                     setting.setText("설정");
                     //변수 변경
                     checking = true;
-                    //checking2 = false;
+                    //폰트변경
+                    title.setTypeface(nanu);
+                    rbook.setTypeface(nanu);
+                    cart.setTypeface(nanu);
+                    info.setTypeface(nanu);
+                    recommend.setTypeface(nanu);
+                    select.setTypeface(nanu);
+                    infotext.setTypeface(nanu);
+                    setting.setTypeface(nanu);
+
                 } else {
-                    title.setText("Recipe App");
+                    title.setText("YoriJori");
                     rbook.setText("Recipe Book");
                     cart.setText("My Recipe");
                     info.setText("Info");
@@ -412,7 +426,15 @@ public class MainActivity extends AppCompatActivity {
                     setting.setText("Setting");
                     //변수 변경
                     checking = false;
-                    //checking2 = true;
+                    //폰트 변경
+                    title.setTypeface(ralewayBold);
+                    rbook.setTypeface(raleway);
+                    cart.setTypeface(raleway);
+                    info.setTypeface(raleway);
+                    recommend.setTypeface(raleway);
+                    select.setTypeface(raleway);
+                    infotext.setTypeface(raleway);
+                    setting.setTypeface(raleway);
                 }
             }
         });

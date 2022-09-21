@@ -1,11 +1,13 @@
 package com.example.recipeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -47,13 +49,17 @@ public class MyRecipe extends AppCompatActivity {
 
         context_my_recipe = this;
 
+        Typeface ralewayBold = ResourcesCompat.getFont(this, R.font.ralewayextrabold);
+        Typeface nanu = ResourcesCompat.getFont(this, R.font.nanumbarungothicyethangul);
         //텍스트 변경
         checkbool = ((MainActivity)MainActivity.context_main).checking;
         recipeText = findViewById(R.id.cart_name);
         if(checkbool == true){
             recipeText.setText("나의 레시피");
+            recipeText.setTypeface(nanu);
         } else{
             recipeText.setText("My Recipe");
+            recipeText.setTypeface(ralewayBold);
         }
 
         /*

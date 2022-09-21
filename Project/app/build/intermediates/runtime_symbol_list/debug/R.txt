@@ -1673,6 +1673,7 @@ int drawable btn_radio_off_mtrl 0x7f07005f
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070060
 int drawable btn_radio_on_mtrl 0x7f070061
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070062
+int drawable cross 0x7f0700ff
 int drawable design_bottom_navigation_item_background 0x7f070063
 int drawable design_fab_background 0x7f070064
 int drawable design_ic_visibility 0x7f070065
@@ -1829,6 +1830,11 @@ int drawable tooltip_frame_dark 0x7f0700fb
 int drawable tooltip_frame_light 0x7f0700fc
 int drawable user 0x7f0700fd
 int drawable white_radius 0x7f0700fe
+int font font 0x7f120000
+int font nanumbarungothicyethangul 0x7f120004
+int font raleway 0x7f120001
+int font ralewayextrabold 0x7f120002
+int font ralewaymedium 0x7f120003
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
